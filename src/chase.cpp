@@ -33,11 +33,13 @@
  *  > Enviorment setup
 */
 
-void Chase::init() {
+void Chase::init(int groupThreadInitNums) {
+
+
 	plog::init<plog::TxtFormatter>(plog::debug, plog::streamStdOut);
 
 	PLOG_DEBUG << "Chase Init - Version " << MAJOR_VER_NUM << "." << MINOR_VER_NUM;
 
 	// Initilize thread manager
-	Chase::threadMan = new ThreadManager::ThreadManager();
+	Chase::threadMan = new ThreadManager::ThreadManager(groupThreadInitNums);
 }

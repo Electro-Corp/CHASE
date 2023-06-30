@@ -21,6 +21,6 @@
 namespace Chase {
 	ThreadManager::ThreadManager* threadMan;
 
-	void init();
+	void init(int groupThreadInitNums = 5);
 }
 #endif

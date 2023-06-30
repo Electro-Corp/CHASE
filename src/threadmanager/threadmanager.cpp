@@ -21,10 +21,14 @@
 #include <plog/Formatters/TxtFormatter.h>
 #include <plog/Initializers/ConsoleInitializer.h>
 
-ThreadManager::ThreadManager::ThreadManager() {
+ThreadManager::ThreadManager::ThreadManager(int groupThreadInitNums) {
 	PLOG_DEBUG << "Electro ThreadManager Startup";
 	PLOG_DEBUG << "Creating GroupThreads...";
 
+	// init group threads. Uses a vector to store all of them.
+	// init allocation size is defined by the program.
+	for (int i = 0; i < groupThreadInitNums; i++) {
+		PLOG_DEBUG << "Create GroupThread (" << i + 1 << "/" << groupThreadInitNums << ")";
 
-
+	}
 }

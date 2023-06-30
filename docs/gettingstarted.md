@@ -8,7 +8,7 @@ You need:
 * chase.so or chase.dll (depending on your OS)
 * The source code for CHASE
 
-To compile with CHASE, include the proper headers and add chase.so to the files you compile.
+To compile with CHASE, include the proper headers and add chase.dll (or chase.so) to the files you compile.
 
 ## Basic program
 

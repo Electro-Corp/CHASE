@@ -22,8 +22,12 @@ namespace ThreadManager {
 	*/
 	class ThreadManager {
 	private:
+		int groupThreadInitNums;
+
+		// Group Threads
+		std::vector<GroupThread> gThreads;
 	public:
-		ThreadManager();
+		ThreadManager(int groupThreadInitNums);
 	};
 
 	/*
