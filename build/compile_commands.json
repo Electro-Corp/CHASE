@@ -1,0 +1,20 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-Wall",
+      "-Wextra",
+      "-std=c++11",
+      "-I",
+      "include",
+      "-fPIC",
+      "-c",
+      "-o",
+      "threadmanager/threadmanager.o",
+      "threadmanager/threadmanager.cpp"
+    ],
+    "directory": "/home/segfault/CHASE/src",
+    "file": "/home/segfault/CHASE/src/threadmanager/threadmanager.cpp",
+    "output": "/home/segfault/CHASE/src/threadmanager/threadmanager.o"
+  }
+]

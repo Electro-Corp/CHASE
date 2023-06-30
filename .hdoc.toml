@@ -1,0 +1,18 @@
+[project]
+name = "Chase"
+version = "0.0.0"
+
+# Optional, adding this will enable direct links from the documentation
+# to your source code.
+git_repo_url = "https://github.com/Electro-Corp/CHASE/"
+git_default_branch = "main"
+
+[paths]
+compile_commands = "build/compile_commands.json"
+
+
+[pages]
+# These Markdown files will be converted to webpages and listed in the sidebar
+paths = [
+  
+]
