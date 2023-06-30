@@ -10,4 +10,4 @@ cp src/chase.so examples
 cd examples
 g++ main.cpp chase.so -I ../src -o test
 
-./test
+LD_LIBRARY_PATH="." ./test

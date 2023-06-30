@@ -16,8 +16,14 @@
 
 #include <plog/Log.h>
 #include <plog/Initializers/RollingFileInitializer.h>
+#include <plog/Formatters/TxtFormatter.h>
+#include <plog/Initializers/ConsoleInitializer.h>
 
 #include "chase.h"
+
+
+#define MAJOR_VER_NUM 0
+#define MINOR_VER_NUM 0
 
 /*
  * The init function does something pretty wack. It inits (most helpful program comment)
@@ -28,9 +34,10 @@
 */
 
 void Chase::init() {
-	plog::init(plog::debug, "log.txt");
+	plog::init<plog::TxtFormatter>(plog::debug, plog::streamStdOut);
 
-	PLOG_DEBUG << "Chase Init - Version [VERSIONNUM]";
+	PLOG_DEBUG << "Chase Init - Version " << MAJOR_VER_NUM << "." << MINOR_VER_NUM;
 
-	
+	// Initilize thread manager
+	Chase::threadMan = new ThreadManager::ThreadManager();
 }

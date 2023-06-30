@@ -10,7 +10,7 @@ OBJS = $(SRCS:.cpp=.o)
 CC = g++
 
 # The compiler flags
-CFLAGS = -Wall -Wextra -std=c++11 -I include -shared -fPIC -static
+CFLAGS = -Wall -Wextra -std=c++11 -I include -shared -fPIC -static 
 
 # The linker flags
 LDFLAGS = -shared -L. 

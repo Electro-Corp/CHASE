@@ -13,14 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#ifndef CHASE_H
-#define CHASE_H
 
-// Includes
-#include "threadmanager/threadmanager.h"
-namespace Chase {
-	ThreadManager::ThreadManager* threadMan;
+#include "threadmanager.h"
 
-	void init();
+#include <plog/Log.h>
+#include <plog/Initializers/RollingFileInitializer.h>
+#include <plog/Formatters/TxtFormatter.h>
+#include <plog/Initializers/ConsoleInitializer.h>
+
+ThreadManager::ThreadManager::ThreadManager() {
+	PLOG_DEBUG << "Electro ThreadManager Startup";
+
+
+
 }
-#endif

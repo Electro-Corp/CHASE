@@ -13,7 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+#ifndef THREADMAN_H
+#define THREADMAN_H
+
 namespace ThreadManager {
+	/*
+	* Manages all GroupThreads and Threads
+	*/
+	class ThreadManager {
+	private:
+	public:
+		ThreadManager();
+	};
+
+	/*
+	* A Groupthread is responsible for [size] 
+	* amount of humans
+	*/
 	class GroupThread {
 	private:
 		int size;
@@ -27,3 +43,4 @@ namespace ThreadManager {
 		
 	};
 }
+#endif
