@@ -16,22 +16,12 @@
 #ifndef THREADMAN_H
 #define THREADMAN_H
 
+#include <vector>
+
 namespace ThreadManager {
-	/*
-	* Manages all GroupThreads and Threads
-	*/
-	class ThreadManager {
-	private:
-		int groupThreadInitNums;
-
-		// Group Threads
-		std::vector<GroupThread> gThreads;
-	public:
-		ThreadManager(int groupThreadInitNums);
-	};
 
 	/*
-	* A Groupthread is responsible for [size] 
+	* A Groupthread is responsible for [size]
 	* amount of humans
 	*/
 	class GroupThread {
@@ -44,7 +34,22 @@ namespace ThreadManager {
 		int getSize();
 
 		// Funcs
-		
+
 	};
+
+	/*
+	* Manages all GroupThreads and Threads
+	*/
+	class ThreadManager {
+	private:
+		int groupThreadInitNums;
+
+		// Group Threads
+		std::vector<GroupThread*> gThreads;
+	public:
+		ThreadManager(int groupThreadInitNums);
+	};
+
+	
 }
 #endif

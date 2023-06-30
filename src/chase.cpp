@@ -42,4 +42,6 @@ void Chase::init(int groupThreadInitNums) {
 
 	// Initilize thread manager
 	Chase::threadMan = new ThreadManager::ThreadManager(groupThreadInitNums);
+
+	// Initilze enviorment system
 }

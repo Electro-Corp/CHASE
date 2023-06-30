@@ -13,31 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#ifndef HUMAN_H
-#define HUMAN_H
+#ifndef LIMB_H
+#define LIMB_H
 
-#include "limb.h"
-#include "modifiers.h"
+#include <string>
 
-#include <vector>
+class Limb {
+private:
+	float damage; // float value from 0.0 to 1.0 (1.0 means completely useless/dismembered)
 
-namespace Human {
-	class Human {
-	private:
-		/*
-		* Basic Human stats
-		*/
-		std::string name;
-		float age;
-
-		Modifier* mods;
-
-		// Limbs
-		std::vector<Limb*> limbs;
-	public:
-		Human(std::string name, Modifier* mods);
-
-		
-	};
-}
+	std::string name;
+public:
+	Limb(std::string name);
+};
 #endif

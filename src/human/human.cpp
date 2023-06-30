@@ -13,31 +13,28 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#ifndef HUMAN_H
-#define HUMAN_H
+#include "human.h"
+/*
+* Constructer for human (crazy)
+*/
+Human::Human::Human(std::string name, Modifier* mods) {
 
-#include "limb.h"
-#include "modifiers.h"
+	// Generate limbs
+	Limb* head = new Limb("Head");
+	limbs.push_back(head);
 
-#include <vector>
+	Limb* LArm = new Limb("LEFT_Arm");
+	limbs.push_back(LArm);
 
-namespace Human {
-	class Human {
-	private:
-		/*
-		* Basic Human stats
-		*/
-		std::string name;
-		float age;
+	Limb* RArm = new Limb("RIGHT_Arm");
+	limbs.push_back(RArm);
 
-		Modifier* mods;
+	Limb* Torso = new Limb("Torso");
+	limbs.push_back(Torso);
 
-		// Limbs
-		std::vector<Limb*> limbs;
-	public:
-		Human(std::string name, Modifier* mods);
+	Limb* LLeg = new Limb("LEFT_Leg");
+	limbs.push_back(LLeg);
 
-		
-	};
+	Limb* RLeg = new Limb("RIGHT_Leg");
+	limbs.push_back(RLeg);
 }
-#endif

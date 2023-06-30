@@ -12,6 +12,8 @@ To compile with CHASE, include the proper headers and add chase.dll (or chase.so
 
 ## Basic program
 
+### Initilization
+
 First, we import `chase.h`.
 
 ```
@@ -23,5 +25,18 @@ Then, inside our main or whatever function you want (here we use main), we call 
 ```
 int main() {
 	Chase::init();
+}
+```
+
+
+### Adding a Human
+
+Lets create a human. That sounded odd.. anyway:
+(incomeplete)
+```
+int main() {
+	Chase::init();
+	
+	Human humanOne = new Human(
 }
 ```

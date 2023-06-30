@@ -21,6 +21,11 @@
 #include <plog/Formatters/TxtFormatter.h>
 #include <plog/Initializers/ConsoleInitializer.h>
 
+/*
+* Thread Manager
+*/
+
+
 ThreadManager::ThreadManager::ThreadManager(int groupThreadInitNums) {
 	PLOG_DEBUG << "Electro ThreadManager Startup";
 	PLOG_DEBUG << "Creating GroupThreads...";
@@ -29,6 +34,24 @@ ThreadManager::ThreadManager::ThreadManager(int groupThreadInitNums) {
 	// init allocation size is defined by the program.
 	for (int i = 0; i < groupThreadInitNums; i++) {
 		PLOG_DEBUG << "Create GroupThread (" << i + 1 << "/" << groupThreadInitNums << ")";
-
+		GroupThread* tmp = new GroupThread(10);
+		gThreads.push_back(tmp);
 	}
+	PLOG_DEBUG << "Electro ThreadManager Init finished.";
+}
+
+
+
+/*
+* Group Threads
+*/
+
+ThreadManager::GroupThread::GroupThread(int size) {
+	this->size = size;
+
+	PLOG_DEBUG << "Group Thread initilizing..";
+
+	// init stuff (oops)
+
+	PLOG_DEBUG << "Group Thread init finished.";
 }
