@@ -23,6 +23,7 @@
 
 ThreadManager::ThreadManager::ThreadManager() {
 	PLOG_DEBUG << "Electro ThreadManager Startup";
+	PLOG_DEBUG << "Creating GroupThreads...";
 
 
 

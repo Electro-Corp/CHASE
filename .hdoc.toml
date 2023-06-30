@@ -14,5 +14,5 @@ compile_commands = "build/compile_commands.json"
 [pages]
 # These Markdown files will be converted to webpages and listed in the sidebar
 paths = [
-  
+  "docs/gettingstarted.md"
 ]

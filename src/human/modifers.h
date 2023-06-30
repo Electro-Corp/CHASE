@@ -13,21 +13,22 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#ifndef HUMAN_H
-#define HUMAN_H
-namespace Human {
-	class Human {
-	private:
-		/*
-		* Basic Human stats
-		*/
-		std::string name;
-		float age;
-
-		Modifier* mods;
-
-	public:
-		Human(std::string name, Modifer* mods);
-	};
-}
+#ifndef MODIFIER_H
+#define MODIFIER_H
+class Modifier {
+private:
+	// Modifers
+	float
+		strength,
+		agression,
+		intelligence,
+		happiness;
+public:
+	Modifier(
+		float strength,
+		float agression,
+		float intelligence,
+		float happiness
+	);
+};
 #endif
