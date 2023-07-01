@@ -17,7 +17,8 @@
 #define CHASE_H
 
 // Includes
-#include "threadmanager/threadmanager.h"
+#include "include/threadmanager/threadmanager.h" // idk why the normal wasnt working but all the other files have the proper setup now
+
 namespace Chase {
 	ThreadManager::ThreadManager* threadMan;
 
