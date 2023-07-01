@@ -16,6 +16,7 @@
 #ifndef THREADMAN_H
 #define THREADMAN_H
 
+#include "../human/human.h"
 #include <vector>
 
 namespace ThreadManager {
@@ -27,6 +28,7 @@ namespace ThreadManager {
 	class GroupThread {
 	private:
 		int size;
+		std::vector<Human> vec;
 	public:
 		GroupThread(int size);
 
