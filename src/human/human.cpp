@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#include "human.h"
+#include <human/human.h>
 /*
 * Constructer for human (crazy)
 */
-Human::Human::Human(std::string name, Modifier* mods) {
+Human::Human::Human(std::string name) {
 
 	// Generate limbs
 	Limb* head = new Limb("Head");
@@ -37,4 +37,8 @@ Human::Human::Human(std::string name, Modifier* mods) {
 
 	Limb* RLeg = new Limb("RIGHT_Leg");
 	limbs.push_back(RLeg);
+
+	// Generate modifiers
+
+	
 }

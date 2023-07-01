@@ -13,14 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#include <human/modifiers.h>
+#ifndef ENVIORMENT_H
+#define ENVIORMENT_H
 
+#include <vector>
 
-Modifier::Modifier(
-	float strength,
-	float agression,
-	float intelligence,
-	float happiness
-) {
+namespace Enviorment {
 
+	/*
+	* Contains the current enviorment
+	*/
+	class Enviorment {
+		
+	};
 }
+#endif
