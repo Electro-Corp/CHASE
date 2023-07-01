@@ -13,31 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#ifndef HUMAN_H
-#define HUMAN_H
+#ifndef OBJECT_H
+#define OBJECT_H
 
-#include "limb.h"
-#include "modifiers.h"
+#include <string>
 
-#include <vector>
-
-namespace Human {
-	class Human {
-	private:
-		/*
-		* Basic Human stats
-		*/
-		std::string name;
-		float age;
-
-		Modifier* mods;
-
-		// Limbs
-		std::vector<Limb*> limbs;
-	public:
-		Human(std::string name, Modifier* mods);
-
-		
-	};
-}
-#endif
+class Object {
+private:
+	
+public:
+	Object(std::string name);
+};

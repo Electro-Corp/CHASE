@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#include "threadmanager.h"
+#include <threadmanager/threadmanager.h>
 
 #include <plog/Log.h>
 #include <plog/Initializers/RollingFileInitializer.h>
