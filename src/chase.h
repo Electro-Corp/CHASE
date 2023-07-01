@@ -18,9 +18,11 @@
 
 // Includes
 #include "include/threadmanager/threadmanager.h" // idk why the normal wasnt working but all the other files have the proper setup now
+#include "include/enviorment/enviorment.h"
 
 namespace Chase {
 	ThreadManager::ThreadManager* threadMan;
+	Enviorment::Enviorment* env;
 
 	void init(int groupThreadInitNums = 5);
 }

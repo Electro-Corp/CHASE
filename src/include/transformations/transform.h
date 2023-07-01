@@ -13,16 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#ifndef OBJECT_H
-#define OBJECT_H
+#ifndef TRANSFORM_H
+#define TRANSFORM_H
 
-#include <string>
-#include <transformations/transform.h>
+#include <tuple>
 
-class Object {
-private:
-	vector3 position, size;
-public:
-	Object(vector3 position, vector3 size);
-};
+typedef std::tuple<float, float, float> vector3;
+
 #endif

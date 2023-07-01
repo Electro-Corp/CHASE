@@ -7,14 +7,17 @@ SRCS = $(shell find . -name "*.cpp")
 OBJS = $(SRCS:.cpp=.o)
 
 # The compiler
-CC = g++
+CC = g++ 
 
 # The compiler flags
-CFLAGS = -Wall -Wextra -std=c++11 -I include -shared -fPIC -static 
+CFLAGS = -Wall -Wextra -std=c++11 -shared -fPIC -I include
 
 # The linker flags
 LDFLAGS = -shared -L. 
 
+CPATH=src
+
+VPATH = src
 # The rule to compile a .cpp file into a .o file
 %.o: %.cpp
 	$(CC) $(CFLAGS) -c $< -o $@

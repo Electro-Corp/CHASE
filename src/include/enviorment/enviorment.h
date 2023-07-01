@@ -18,13 +18,18 @@
 
 #include <vector>
 
+#include <object.h>
+
 namespace Enviorment {
 
 	/*
 	* Contains the current enviorment
 	*/
 	class Enviorment {
-		
+	private:
+		std::vector<Object> objects;
+	public:
+		Enviorment();
 	};
 }
 #endif

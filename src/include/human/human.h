@@ -19,10 +19,12 @@
 #include <human/limb.h>
 #include <human/modifiers.h>
 
+#include <object.h>
+
 #include <vector>
 
 namespace Human {
-	class Human {
+	class Human : public Object {
 	private:
 		/*
 		* Basic Human stats
