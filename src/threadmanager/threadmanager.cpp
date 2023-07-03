@@ -51,7 +51,10 @@ ThreadManager::GroupThread::GroupThread(int size) {
 
 	PLOG_DEBUG << "Group Thread initilizing..";
 
-	// init stuff (oops)
 
 	PLOG_DEBUG << "Group Thread init finished.";
+}
+
+int ThreadManager::GroupThread::getSize() {
+	return this->size;
 }

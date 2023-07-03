@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+*.vsidx
+.vscode/c_cpp_properties.json
+*.sqlite
+*.ipch
+*.db
+*.lock
+*.db-shm
+*.db-wal
+*.opendb
+.vs/ProjectSettings.json
