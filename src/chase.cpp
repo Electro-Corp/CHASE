@@ -19,8 +19,8 @@
 #include <plog/Formatters/TxtFormatter.h>
 #include <plog/Initializers/ConsoleInitializer.h>
 
-#include "chase.h"
-
+//#include <pch.h>
+#include <chase.h>
 
 #define MAJOR_VER_NUM 0
 #define MINOR_VER_NUM 0

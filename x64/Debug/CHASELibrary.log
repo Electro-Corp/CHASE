@@ -1,0 +1,19 @@
+﻿  chase.cpp
+D:\msys2\home\Andre\CHASELibrary\src\chase.cpp(49,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  dllmain.cpp
+D:\msys2\home\Andre\CHASELibrary\src\dllmain.cpp(2,10): fatal error C1083: Cannot open precompiled header file: 'x64\Debug\CHASELibrary.pch': No such file or directory
+  enviorment.cpp
+D:\msys2\home\Andre\CHASELibrary\src\enviorment\enviorment.cpp(30,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  human.cpp
+D:\msys2\home\Andre\CHASELibrary\src\human\human.cpp(49,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  limb.cpp
+D:\msys2\home\Andre\CHASELibrary\src\human\limb.cpp(22,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  modifiers.cpp
+D:\msys2\home\Andre\CHASELibrary\src\human\modifiers.cpp(28,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  object.cpp
+D:\msys2\home\Andre\CHASELibrary\src\object.cpp(19,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  pch.cpp
+D:\msys2\home\Andre\CHASELibrary\src\pch.cpp(3,10): fatal error C1083: Cannot open precompiled header file: 'x64\Debug\CHASELibrary.pch': No such file or directory
+  threadmanager.cpp
+D:\msys2\home\Andre\CHASELibrary\src\threadmanager\threadmanager.cpp(76,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Generating Code...

@@ -1,0 +1,18 @@
+﻿  chase.cpp
+D:\msys2\home\Andre\CHASELibrary\src\chase.cpp(22,10): fatal error C1083: Cannot open precompiled header file: 'x64\Release\CHASELibrary.pch': No such file or directory
+  dllmain.cpp
+D:\msys2\home\Andre\CHASELibrary\src\dllmain.cpp(2,10): fatal error C1083: Cannot open precompiled header file: 'x64\Release\CHASELibrary.pch': No such file or directory
+  enviorment.cpp
+D:\msys2\home\Andre\CHASELibrary\src\enviorment\enviorment.cpp(17,10): fatal error C1083: Cannot open precompiled header file: 'x64\Release\CHASELibrary.pch': No such file or directory
+  human.cpp
+D:\msys2\home\Andre\CHASELibrary\src\human\human.cpp(16,10): fatal error C1083: Cannot open precompiled header file: 'x64\Release\CHASELibrary.pch': No such file or directory
+  limb.cpp
+D:\msys2\home\Andre\CHASELibrary\src\human\limb.cpp(17,10): fatal error C1083: Cannot open precompiled header file: 'x64\Release\CHASELibrary.pch': No such file or directory
+  modifiers.cpp
+D:\msys2\home\Andre\CHASELibrary\src\human\modifiers.cpp(17,10): fatal error C1083: Cannot open precompiled header file: 'x64\Release\CHASELibrary.pch': No such file or directory
+  object.cpp
+D:\msys2\home\Andre\CHASELibrary\src\object.cpp(1,10): fatal error C1083: Cannot open precompiled header file: 'x64\Release\CHASELibrary.pch': No such file or directory
+  pch.cpp
+D:\msys2\home\Andre\CHASELibrary\src\pch.cpp(3,10): fatal error C1083: Cannot open precompiled header file: 'x64\Release\CHASELibrary.pch': No such file or directory
+  threadmanager.cpp
+D:\msys2\home\Andre\CHASELibrary\src\threadmanager\threadmanager.cpp(18,10): fatal error C1083: Cannot open precompiled header file: 'x64\Release\CHASELibrary.pch': No such file or directory
