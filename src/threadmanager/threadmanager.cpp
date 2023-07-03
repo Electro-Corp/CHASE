@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#include <threadmanager/threadmanager.h>
+#include <../include/threadmanager/threadmanager.h>
 
 #include <plog/Log.h>
 #include <plog/Initializers/RollingFileInitializer.h>
@@ -40,6 +40,19 @@ ThreadManager::ThreadManager::ThreadManager(int groupThreadInitNums) {
 	PLOG_DEBUG << "Electro ThreadManager Init finished.";
 }
 
+int loc = 0;
+int sub_loc = 0;
+void ThreadManager::ThreadManager::createHuman(std::string name) {
+	if (sub_loc > gThreads[loc]->getSize() - 1) { ++loc; }
+	if (loc > gThreads.size() - 1) { 
+		GroupThread* tmp = new GroupThread(10);
+		gThreads.push_back(tmp);
+	}
+
+	Human::Human tmp_h(name);
+	gThreads[loc]->addHuman(tmp_h);
+	++sub_loc;
+}
 
 
 /*
@@ -47,14 +60,16 @@ ThreadManager::ThreadManager::ThreadManager(int groupThreadInitNums) {
 */
 
 ThreadManager::GroupThread::GroupThread(int size) {
-	this->size = size;
-
 	PLOG_DEBUG << "Group Thread initilizing..";
-
-
+		this->size = size;
 	PLOG_DEBUG << "Group Thread init finished.";
 }
 
 int ThreadManager::GroupThread::getSize() {
 	return this->size;
+}
+
+void ThreadManager::GroupThread::addHuman(Human::Human _human) {
+	PLOG_DEBUG << "Adding human with name: " << _human.get_name();
+	vec.push_back(_human);
 }

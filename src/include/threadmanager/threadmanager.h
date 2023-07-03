@@ -28,13 +28,13 @@ namespace ThreadManager {
 	class GroupThread {
 	private:
 		int size;
-		std::vector<Human> vec;
+		std::vector<Human::Human> vec;
 	public:
 		GroupThread(int size);
 
 		// Getters
 		int getSize();
-
+		void addHuman(Human::Human _human);
 		// Funcs
 
 	};
@@ -50,6 +50,7 @@ namespace ThreadManager {
 		std::vector<GroupThread*> gThreads;
 	public:
 		ThreadManager(int groupThreadInitNums);
+		void createHuman(std::string name);
 	};
 
 	
