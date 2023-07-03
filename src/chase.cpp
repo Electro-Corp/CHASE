@@ -44,4 +44,5 @@ void Chase::init(int groupThreadInitNums) {
 	Chase::threadMan = new ThreadManager::ThreadManager(groupThreadInitNums);
 
 	// Initilze enviorment system
+	Chase::env = new Enviorment::Enviorment();
 }

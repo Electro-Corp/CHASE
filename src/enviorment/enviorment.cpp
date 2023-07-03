@@ -13,16 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#ifndef OBJECT_H
-#define OBJECT_H
+#include <enviorment/enviorment.h>
 
-#include <string>
-#include <transformations/transform.h>
+#include <plog/Log.h>
+#include <plog/Initializers/RollingFileInitializer.h>
+#include <plog/Formatters/TxtFormatter.h>
+#include <plog/Initializers/ConsoleInitializer.h>
 
-class Object {
-private:
-	vector3 position, size;
-public:
-	Object(vector3 position, vector3 size);
-};
-#endif
+/*
+* Constructer (lamo)
+*/
+
+Enviorment::Enviorment::Enviorment() {
+	PLOG_DEBUG << "Enviorment Intilizing..";
+}
