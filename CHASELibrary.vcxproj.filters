@@ -155,12 +155,8 @@
     <ClInclude Include="src\include\transformations\transform.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Object Include="src\include\object.o" />
-    <Object Include="src\chase.o" />
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="src\chase.so" />
+    <ClInclude Include="src\include\object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

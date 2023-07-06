@@ -69,13 +69,6 @@
     <ClInclude Include="src\include\threadmanager\threadmanager.h" />
     <ClInclude Include="src\include\transformations\transform.h" />
   </ItemGroup>
-  <ItemGroup>
-    <Object Include="src\chase.o" />
-    <Object Include="src\include\object.o" />
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="src\chase.so" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
