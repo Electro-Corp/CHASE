@@ -1,19 +1,61 @@
 ﻿  chase.cpp
-D:\msys2\home\Andre\CHASELibrary\src\chase.cpp(49,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
   dllmain.cpp
-D:\msys2\home\Andre\CHASELibrary\src\dllmain.cpp(2,10): fatal error C1083: Cannot open precompiled header file: 'x64\Debug\CHASELibrary.pch': No such file or directory
   enviorment.cpp
-D:\msys2\home\Andre\CHASELibrary\src\enviorment\enviorment.cpp(30,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+D:\msys2\home\Andre\CHASELibrary\src\enviorment\enviorment.cpp(30,1): error C2857: '#include' statement specified with the /Ycpch.h command-line option was not found in the source file
   human.cpp
-D:\msys2\home\Andre\CHASELibrary\src\human\human.cpp(49,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+D:\msys2\home\Andre\CHASELibrary\src\human\human.cpp(46,1): error C2857: '#include' statement specified with the /Ycpch.h command-line option was not found in the source file
   limb.cpp
-D:\msys2\home\Andre\CHASELibrary\src\human\limb.cpp(22,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+D:\msys2\home\Andre\CHASELibrary\src\human\limb.cpp(22,1): error C2857: '#include' statement specified with the /Ycpch.h command-line option was not found in the source file
   modifiers.cpp
-D:\msys2\home\Andre\CHASELibrary\src\human\modifiers.cpp(28,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+D:\msys2\home\Andre\CHASELibrary\src\human\modifiers.cpp(28,1): error C2857: '#include' statement specified with the /Ycpch.h command-line option was not found in the source file
   object.cpp
-D:\msys2\home\Andre\CHASELibrary\src\object.cpp(19,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+E:\Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\tuple(158,47): warning C4244: 'initializing': conversion from '_Ty' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+          and
+          [
+              _Ty=float
+          ]
+E:\Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\tuple(245): message : see reference to function template instantiation 'std::_Tuple_val<_This>::_Tuple_val<_Ty>(_Other &&)' being compiled
+          with
+          [
+              _This=float,
+              _Ty=int,
+              _Other=int
+          ]
+E:\Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\tuple(245): message : see reference to function template instantiation 'std::_Tuple_val<_This>::_Tuple_val<_Ty>(_Other &&)' being compiled
+          with
+          [
+              _This=float,
+              _Ty=int,
+              _Other=int
+          ]
+E:\Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\tuple(327): message : see reference to function template instantiation 'std::tuple<float,float,float>::tuple<std::_Exact_args_t,_Ty,_Ty,_Ty,0>(_Tag,_This2 &&,_Ty &&,_Ty &&)' being compiled
+          with
+          [
+              _Ty=int,
+              _Tag=std::_Exact_args_t,
+              _This2=int
+          ]
+E:\Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\tuple(327): message : see reference to function template instantiation 'std::tuple<float,float,float>::tuple<std::_Exact_args_t,_Ty,_Ty,_Ty,0>(_Tag,_This2 &&,_Ty &&,_Ty &&)' being compiled
+          with
+          [
+              _Ty=int,
+              _Tag=std::_Exact_args_t,
+              _This2=int
+          ]
+D:\msys2\home\Andre\CHASELibrary\src\object.cpp(8): message : see reference to function template instantiation 'std::tuple<float,float,float>::tuple<int,int,int,0>(_This2 &&,int &&,int &&) noexcept' being compiled
+          with
+          [
+              _This2=int
+          ]
+D:\msys2\home\Andre\CHASELibrary\src\object.cpp(8): message : see reference to function template instantiation 'std::tuple<float,float,float>::tuple<int,int,int,0>(_This2 &&,int &&,int &&) noexcept' being compiled
+          with
+          [
+              _This2=int
+          ]
   pch.cpp
-D:\msys2\home\Andre\CHASELibrary\src\pch.cpp(3,10): fatal error C1083: Cannot open precompiled header file: 'x64\Debug\CHASELibrary.pch': No such file or directory
   threadmanager.cpp
-D:\msys2\home\Andre\CHASELibrary\src\threadmanager\threadmanager.cpp(76,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
-  Generating Code...
+D:\msys2\home\Andre\CHASELibrary\src\threadmanager\threadmanager.cpp(63,1): error C2857: '#include' statement specified with the /Ycpch.h command-line option was not found in the source file

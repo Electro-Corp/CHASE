@@ -19,7 +19,7 @@
 #include <plog/Formatters/TxtFormatter.h>
 #include <plog/Initializers/ConsoleInitializer.h>
 
-//#include <pch.h>
+#include <pch.h>
 #include <chase.h>
 
 #define MAJOR_VER_NUM 0

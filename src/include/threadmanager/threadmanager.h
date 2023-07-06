@@ -28,7 +28,7 @@ namespace ThreadManager {
 	class GroupThread {
 	private:
 		int size;
-		std::vector<Human> vec;
+		std::vector<Human::Human> vec;
 	public:
 		GroupThread(int size);
 

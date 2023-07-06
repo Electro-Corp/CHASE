@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -36,6 +36,7 @@
     <ClInclude Include="src\include\human\human.h" />
     <ClInclude Include="src\include\human\limb.h" />
     <ClInclude Include="src\include\human\modifiers.h" />
+    <ClInclude Include="src\include\object.h" />
     <ClInclude Include="src\include\object.hpp" />
     <ClInclude Include="src\include\pch.h" />
     <ClInclude Include="src\include\plog\Appenders\AndroidAppender.h" />
@@ -167,7 +168,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;CHASELIBRARY_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>D:\msys2\home\Andre\CHASELibrary\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>

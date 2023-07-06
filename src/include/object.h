@@ -24,5 +24,8 @@ private:
 	vector3 position, size;
 public:
 	Object(vector3 position, vector3 size);
+	Object();
+	void set_size(vector3 _size);
+	void set_pos(vector3 _pos);
 };
 #endif
