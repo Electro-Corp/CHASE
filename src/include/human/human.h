@@ -38,8 +38,7 @@ namespace Human {
 		std::vector<Limb*> limbs;
 	public:
 		Human(std::string name);
-
-		
+		std::string get_name();
 	};
 }
 #endif

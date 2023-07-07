@@ -28,20 +28,33 @@
 */
 
 
-ThreadManager::ThreadManager::ThreadManager(int groupThreadInitNums) {
+ThreadManager::ThreadManager::ThreadManager() {
 	PLOG_DEBUG << "Electro ThreadManager Startup";
-	PLOG_DEBUG << "Creating GroupThreads...";
+	PLOG_DEBUG << "Creating Startup GroupThread";
 
 	// init group threads. Uses a vector to store all of them.
 	// init allocation size is defined by the program.
-	for (int i = 0; i < groupThreadInitNums; i++) {
-		PLOG_DEBUG << "Create GroupThread (" << i + 1 << "/" << groupThreadInitNums << ")";
+
 		GroupThread* tmp = new GroupThread(10);
 		gThreads.push_back(tmp);
-	}
+
 	PLOG_DEBUG << "Electro ThreadManager Init finished.";
 }
 
+int loc = 0;
+int sub_loc = 0;
+
+void ThreadManager::ThreadManager::createHuman(std::string name) {
+	if (sub_loc > gThreads[loc]->getSize() - 1) { ++loc; }
+	if (loc > gThreads.size() - 1) {
+		GroupThread* tmp = new GroupThread(10);
+		gThreads.push_back(tmp);
+	}
+
+	Human::Human tmp_h(name);
+	gThreads[loc]->addHuman(tmp_h);
+	++sub_loc;
+}
 
 
 /*
@@ -49,14 +62,16 @@ ThreadManager::ThreadManager::ThreadManager(int groupThreadInitNums) {
 */
 
 ThreadManager::GroupThread::GroupThread(int size) {
-	this->size = size;
-
 	PLOG_DEBUG << "Group Thread initilizing..";
-
-
+	this->size = size;
 	PLOG_DEBUG << "Group Thread init finished.";
 }
 
 int ThreadManager::GroupThread::getSize() {
 	return this->size;
+}
+
+void ThreadManager::GroupThread::addHuman(Human::Human _human) {
+	PLOG_DEBUG << "Adding human with name: " << _human.get_name();
+	vec.push_back(_human);
 }

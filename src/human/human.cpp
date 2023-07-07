@@ -18,7 +18,7 @@
 /*
 * Constructer for human (crazy)
 */
-Human::Human::Human(std::string name) {
+Human::Human::Human(std::string name) : Object() {
 
 	// Generate limbs
 	Limb* head = new Limb("Head");
@@ -41,5 +41,8 @@ Human::Human::Human(std::string name) {
 
 	// Generate modifiers
 
-	
+}
+
+std::string Human::Human::get_name() {
+	return this->name;
 }

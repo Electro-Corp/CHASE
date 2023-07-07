@@ -16,14 +16,31 @@
 #ifndef CHASE_H
 #define CHASE_H
 
+#ifdef CHASELibrary_EXPORTS
+	#define CHAPI __declspec(dllexport)
+#else
+	#define CHAPI __declspec(dllimport)
+#endif
+
 // Includes
-#include <threadmanager/threadmanager.h> // idk why the normal wasnt working but all the other files have the proper setup now
+#include <threadmanager/threadmanager.h>
 #include <enviorment/enviorment.h>
 
 namespace Chase {
 	ThreadManager::ThreadManager* threadMan;
 	Enviorment::Enviorment* env;
 
-	void init(int groupThreadInitNums = 5);
+	#ifdef __cplusplus
+	extern "C" {
+	#endif
+		// Start exported functions
+
+		CHAPI void init();
+
+		// End exported functions
+	#ifdef __cplusplus
+	}
+	#endif
+	 
 }
 #endif
