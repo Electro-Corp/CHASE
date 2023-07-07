@@ -62,8 +62,11 @@ void ThreadManager::ThreadManager::createHuman(std::string name) {
 */
 
 ThreadManager::GroupThread::GroupThread(int size) {
-	PLOG_DEBUG << "Group Thread initilizing..";
 	this->size = size;
+
+	PLOG_DEBUG << "Group Thread initilizing..";
+
+
 	PLOG_DEBUG << "Group Thread init finished.";
 }
 

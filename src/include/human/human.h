@@ -19,7 +19,7 @@
 #include <human/limb.h>
 #include <human/modifiers.h>
 
-#include <object.h>
+#include <object.hpp>
 
 #include <vector>
 

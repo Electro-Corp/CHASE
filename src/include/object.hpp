@@ -13,19 +13,25 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 #ifndef OBJECT_H
 #define OBJECT_H
 
-#include <string>
-#include <transformations/transform.h>
+#include <string>      
+#include <transformations/transform.h> 
 
 class Object {
 private:
-	vector3 position, size;
+    vector3 position;
+    vector3 size;
+
 public:
-	Object(vector3 position, vector3 size);
-	Object();
-	void set_size(vector3 _size);
-	void set_pos(vector3 _pos);
+    Object(vector3 _position, vector3 _size);
+    Object();
+
+    void set_pos(vector3 pos);
+
+    void set_size(vector3 _size);
 };
+
 #endif
