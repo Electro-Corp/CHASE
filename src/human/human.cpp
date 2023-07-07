@@ -13,11 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+#include <pch.h>
 #include <human/human.h>
 /*
 * Constructer for human (crazy)
 */
-Human::Human::Human(std::string name) {
+Human::Human::Human(std::string name) : Object() {
 
 	// Generate limbs
 	Limb* head = new Limb("Head");
@@ -40,5 +41,8 @@ Human::Human::Human(std::string name) {
 
 	// Generate modifiers
 
-	
+}
+
+std::string Human::Human::get_name() {
+	return this->name;
 }

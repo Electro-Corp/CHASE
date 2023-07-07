@@ -19,7 +19,7 @@
 #include <human/limb.h>
 #include <human/modifiers.h>
 
-#include <object.h>
+#include <object.hpp>
 
 #include <vector>
 
@@ -38,8 +38,7 @@ namespace Human {
 		std::vector<Limb*> limbs;
 	public:
 		Human(std::string name);
-
-		
+		std::string get_name();
 	};
 }
 #endif
