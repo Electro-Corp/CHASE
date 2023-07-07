@@ -19,8 +19,8 @@
 #include <plog/Formatters/TxtFormatter.h>
 #include <plog/Initializers/ConsoleInitializer.h>
 
-#include "chase.h"
-
+#include <pch.h>
+#include <chase.h>
 
 #define MAJOR_VER_NUM 0
 #define MINOR_VER_NUM 0
@@ -33,7 +33,7 @@
  *  > Enviorment setup
 */
 
-void Chase::init(int groupThreadInitNums) {
+void Chase::init() {
 
 
 	plog::init<plog::TxtFormatter>(plog::debug, plog::streamStdOut);
@@ -41,7 +41,7 @@ void Chase::init(int groupThreadInitNums) {
 	PLOG_DEBUG << "Chase Init - Version " << MAJOR_VER_NUM << "." << MINOR_VER_NUM;
 
 	// Initilize thread manager
-	Chase::threadMan = new ThreadManager::ThreadManager(groupThreadInitNums);
+	Chase::threadMan = new ThreadManager::ThreadManager();
 
 	// Initilze enviorment system
 	Chase::env = new Enviorment::Enviorment();

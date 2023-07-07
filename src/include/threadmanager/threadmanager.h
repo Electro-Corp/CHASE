@@ -44,15 +44,13 @@ namespace ThreadManager {
 	*/
 	class ThreadManager {
 	private:
-		int groupThreadInitNums;
-
 		// Group Threads
 		std::vector<GroupThread*> gThreads;
 	public:
-		ThreadManager(int groupThreadInitNums);
+		ThreadManager();
 		void createHuman(std::string name);
 	};
 
-	
+
 }
 #endif

@@ -1,1 +1,0 @@
-﻿2023-06-29 13:08:21.980 DEBUG [4580] [Chase::init@26] Chase Init - Version [VERSIONNUM]
