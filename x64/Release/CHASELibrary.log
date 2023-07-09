@@ -1,12 +1,48 @@
 ﻿  chase.cpp
-D:\msys2\home\Andre\CHASELibrary\src\chase.cpp(36,43): warning C4273: 'Chase::init': inconsistent dll linkage
-D:\msys2\home\Andre\CHASELibrary\src\include\chase.h(38,14): message : see previous definition of 'init'
-LINK : warning C4727: PCH named d:\msys2\home\andre\chaselibrary\x64\release\chaselibrary.pch with same timestamp found in d:\msys2\home\andre\chaselibrary\x64\release\modifiers.obj and d:\msys2\home\andre\chaselibrary\x64\release\limb.obj.  Using first PCH.
-LINK : warning C4727: PCH named d:\msys2\home\andre\chaselibrary\x64\release\chaselibrary.pch with same timestamp found in d:\msys2\home\andre\chaselibrary\x64\release\pch.obj and d:\msys2\home\andre\chaselibrary\x64\release\object.obj.  Using first PCH.
-     Creating library D:\msys2\home\Andre\CHASELibrary\x64\Release\CHASELibrary.lib and object D:\msys2\home\Andre\CHASELibrary\x64\Release\CHASELibrary.exp
+C:\Users\segfault\Documents\GitHub\CHASE\src\chase.cpp(36,13): warning C4273: 'Chase::init': inconsistent dll linkage
+C:\Users\segfault\Documents\GitHub\CHASE\src\include\chase.h(38,14): message : see previous definition of 'init'
+  dllmain.cpp
+  enviorment.cpp
+  human.cpp
+  limb.cpp
+  modifiers.cpp
+  object.cpp
+E:\vs2022\VC\Tools\MSVC\14.36.32532\include\tuple(144,47): warning C4244: 'initializing': conversion from '_Ty' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+          and
+          [
+              _Ty=float
+          ]
+E:\vs2022\VC\Tools\MSVC\14.36.32532\include\tuple(236,102): message : see reference to function template instantiation 'std::_Tuple_val<_This>::_Tuple_val<_Ty>(_Other &&)' being compiled
+          with
+          [
+              _This=float,
+              _Ty=int,
+              _Other=int
+          ]
+E:\vs2022\VC\Tools\MSVC\14.36.32532\include\tuple(282,16): message : see reference to function template instantiation 'std::tuple<float,float,float>::tuple<std::_Exact_args_t,_Ty,_Ty,_Ty,0>(_Tag,_This2 &&,_Ty &&,_Ty &&)' being compiled
+          with
+          [
+              _Ty=int,
+              _Tag=std::_Exact_args_t,
+              _This2=int
+          ]
+C:\Users\segfault\Documents\GitHub\CHASE\src\object.cpp(8,28): message : see reference to function template instantiation 'std::tuple<float,float,float>::tuple<int,int,int,0>(_This2 &&,int &&,int &&) noexcept' being compiled
+          with
+          [
+              _This2=int
+          ]
+C:\Users\segfault\Documents\GitHub\CHASE\src\object.cpp(8,28): message : see the first reference to 'std::tuple<float,float,float>::tuple' in 'Object::Object'
+LINK : warning C4727: PCH named c:\users\segfault\documents\github\chase\x64\release\chaselibrary.pch with same timestamp found in c:\users\segfault\documents\github\chase\x64\release\enviorment.obj and c:\users\segfault\documents\github\chase\x64\release\dllmain.obj.  Using first PCH.
+LINK : warning C4727: PCH named c:\users\segfault\documents\github\chase\x64\release\chaselibrary.pch with same timestamp found in c:\users\segfault\documents\github\chase\x64\release\human.obj and c:\users\segfault\documents\github\chase\x64\release\dllmain.obj.  Using first PCH.
+LINK : warning C4727: PCH named c:\users\segfault\documents\github\chase\x64\release\chaselibrary.pch with same timestamp found in c:\users\segfault\documents\github\chase\x64\release\modifiers.obj and c:\users\segfault\documents\github\chase\x64\release\limb.obj.  Using first PCH.
+LINK : warning C4727: PCH named c:\users\segfault\documents\github\chase\x64\release\chaselibrary.pch with same timestamp found in c:\users\segfault\documents\github\chase\x64\release\object.obj and c:\users\segfault\documents\github\chase\x64\release\limb.obj.  Using first PCH.
+     Creating library C:\Users\segfault\Documents\GitHub\CHASE\x64\Release\CHASELibrary.lib and object C:\Users\segfault\Documents\GitHub\CHASE\x64\Release\CHASELibrary.exp
   Generating code
-  0 of 457 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+  Previous IPDB was built with incompatible compiler, fall back to full compilation.
+  All 450 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
-  CHASELibrary.vcxproj -> D:\msys2\home\Andre\CHASELibrary\x64\Release\CHASELibrary.dll
+  CHASELibrary.vcxproj -> C:\Users\segfault\Documents\GitHub\CHASE\x64\Release\CHASELibrary.dll

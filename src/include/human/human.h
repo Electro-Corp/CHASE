@@ -22,6 +22,7 @@
 #include <object.hpp>
 
 #include <vector>
+#include <string>
 
 namespace Human {
 	class Human : public Object {

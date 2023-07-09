@@ -44,16 +44,23 @@ ThreadManager::ThreadManager::ThreadManager() {
 int loc = 0;
 int sub_loc = 0;
 
+/*
+* Add a human into the threads
+*/
+
 void ThreadManager::ThreadManager::createHuman(std::string name) {
 	if (sub_loc > gThreads[loc]->getSize() - 1) { ++loc; }
 	if (loc > gThreads.size() - 1) {
-		GroupThread* tmp = new GroupThread(10);
+		// Allocate a new GroupThread if the latest one is full
+		GroupThread* tmp = new GroupThread(10); 
 		gThreads.push_back(tmp);
 	}
-
+	// Create new human
 	Human::Human tmp_h(name);
 	gThreads[loc]->addHuman(tmp_h);
 	++sub_loc;
+	// return id
+	return; // tmp
 }
 
 

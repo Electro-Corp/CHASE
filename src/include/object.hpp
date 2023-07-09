@@ -17,7 +17,7 @@
 #ifndef OBJECT_H
 #define OBJECT_H
 
-#include <string>      
+#include <string.h>      
 #include <transformations/transform.h> 
 
 class Object {
