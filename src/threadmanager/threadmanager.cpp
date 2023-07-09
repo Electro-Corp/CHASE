@@ -51,9 +51,11 @@ int sub_loc = 0;
 int ThreadManager::ThreadManager::createHuman(std::string name) {
 	if (sub_loc > gThreads[loc]->getSize() - 1) { ++loc; }
 	if (loc > gThreads.size() - 1) {
+		PLOG_DEBUG << "Current GroupThread full, allocating a new one [(loc, sub_loc, gThreads.size()) = (" << loc << ", " << sub_loc << ", " << gThreads.size() << ")]";
 		// Allocate a new GroupThread if the latest one is full
 		GroupThread* tmp = new GroupThread(10); 
 		gThreads.push_back(tmp);
+		loc = 0;
 	}
 	// Create new human
 	Human::Human tmp_h(name, sub_loc + loc);
