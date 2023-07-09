@@ -46,3 +46,11 @@ void Chase::init() {
 	// Initilze enviorment system
 	Chase::env = new Enviorment::Enviorment();
 }
+
+/*
+* Add a human
+*/
+
+int Chase::addHuman(std::string name) {
+	return Chase::threadMan->createHuman(name);
+}

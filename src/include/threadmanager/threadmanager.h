@@ -48,7 +48,7 @@ namespace ThreadManager {
 		std::vector<GroupThread*> gThreads;
 	public:
 		ThreadManager();
-		void createHuman(std::string name);
+		int createHuman(std::string name);
 	};
 
 

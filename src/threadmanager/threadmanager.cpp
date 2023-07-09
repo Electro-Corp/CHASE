@@ -48,7 +48,7 @@ int sub_loc = 0;
 * Add a human into the threads
 */
 
-void ThreadManager::ThreadManager::createHuman(std::string name) {
+int ThreadManager::ThreadManager::createHuman(std::string name) {
 	if (sub_loc > gThreads[loc]->getSize() - 1) { ++loc; }
 	if (loc > gThreads.size() - 1) {
 		// Allocate a new GroupThread if the latest one is full
@@ -56,11 +56,11 @@ void ThreadManager::ThreadManager::createHuman(std::string name) {
 		gThreads.push_back(tmp);
 	}
 	// Create new human
-	Human::Human tmp_h(name);
+	Human::Human tmp_h(name, sub_loc + loc);
 	gThreads[loc]->addHuman(tmp_h);
 	++sub_loc;
 	// return id
-	return; // tmp
+	return tmp_h.get_id(); // tmp
 }
 
 

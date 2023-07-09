@@ -1,2 +1,3 @@
 D:\msys2\home\Andre\CHASELibrary\x64\Release\CHASELibrary.dll
 C:\Users\segfault\Documents\GitHub\CHASE\x64\Release\CHASELibrary.dll
+C:\Users\segfault\Documents\GitHub\CHASELibrary\x64\Release\CHASELibrary.dll

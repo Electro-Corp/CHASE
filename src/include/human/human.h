@@ -34,12 +34,13 @@ namespace Human {
 		float age;
 
 		Modifier* mods;
-
+		int id;
 		// Limbs
 		std::vector<Limb*> limbs;
 	public:
-		Human(std::string name);
+		Human(std::string name, int id);
 		std::string get_name();
+		int get_id();
 	};
 }
 #endif

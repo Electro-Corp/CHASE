@@ -37,7 +37,7 @@ namespace Chase {
 
 		CHAPI void init();
 
-		CHAPI void addHuman(std::string name);
+		CHAPI int addHuman(std::string name);
 
 		// End exported functions
 	#ifdef __cplusplus
