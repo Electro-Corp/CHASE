@@ -18,7 +18,10 @@
 /*
 * Constructer for human (crazy)
 */
-Human::Human::Human(std::string name) : Object() {
+Human::Human::Human(std::string name, human_id id) : Object() { // extends from object (this says a lot about society)
+	// Basic setup
+	this->name = name;
+	this->id = id;
 
 	// Generate limbs
 	Limb* head = new Limb("Head");
@@ -45,4 +48,8 @@ Human::Human::Human(std::string name) : Object() {
 
 std::string Human::Human::get_name() {
 	return this->name;
+}
+
+Human::human_id Human::Human::get_id() {
+	return this->id;
 }

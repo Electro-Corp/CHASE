@@ -48,7 +48,11 @@ namespace ThreadManager {
 		std::vector<GroupThread*> gThreads;
 	public:
 		ThreadManager();
-		void createHuman(std::string name);
+
+		/* Human stuff */
+		Human::human_id createHuman(std::string name);
+		//Human::Human* getHumanById(uint64_t id) {
+
 	};
 
 

@@ -22,8 +22,14 @@
 #include <object.hpp>
 
 #include <vector>
+#include <string>
+
 
 namespace Human {
+	typedef struct {
+		int loc, sub_loc;
+	} human_id;
+
 	class Human : public Object {
 	private:
 		/*
@@ -33,12 +39,13 @@ namespace Human {
 		float age;
 
 		Modifier* mods;
-
+		human_id id;
 		// Limbs
 		std::vector<Limb*> limbs;
 	public:
-		Human(std::string name);
+		Human(std::string name, human_id id);
 		std::string get_name();
+		human_id get_id();
 	};
 }
 #endif

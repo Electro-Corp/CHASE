@@ -20,10 +20,17 @@
 #include <plog/Formatters/TxtFormatter.h>
 #include <plog/Initializers/ConsoleInitializer.h>
 
+#define STATUS_OK "OK"
+#define STATUS_ISSUES "NON-FATAL ISSUES"
+#define STATUS_FAILED "FAILED"
+
 /*
 * Constructer (lamo)
 */
 
 Enviorment::Enviorment::Enviorment() {
 	PLOG_DEBUG << "Enviorment Intilizing..";
+	// 
+	std::string status = STATUS_OK;
+	PLOG_DEBUG << "Enviorment Intilizing finished - [" << status << "]";
 }
