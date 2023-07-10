@@ -1,12 +1,19 @@
-﻿  threadmanager.cpp
+﻿  chase.cpp
+C:\Users\segfault\Documents\GitHub\CHASELibrary\src\chase.cpp(36,13): warning C4273: 'Chase::init': inconsistent dll linkage
+C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\chase.h(38,14): message : see previous definition of 'init'
+C:\Users\segfault\Documents\GitHub\CHASELibrary\src\chase.cpp(54,24): warning C4273: 'Chase::addHuman': inconsistent dll linkage
+C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\chase.h(40,25): message : see previous definition of 'addHuman'
+  human.cpp
+  threadmanager.cpp
 LINK : warning C4727: PCH named c:\users\segfault\documents\github\chaselibrary\x64\release\chaselibrary.pch with same timestamp found in c:\users\segfault\documents\github\chaselibrary\x64\release\enviorment.obj and c:\users\segfault\documents\github\chaselibrary\x64\release\dllmain.obj.  Using first PCH.
+LINK : warning C4727: PCH named c:\users\segfault\documents\github\chaselibrary\x64\release\chaselibrary.pch with same timestamp found in c:\users\segfault\documents\github\chaselibrary\x64\release\human.obj and c:\users\segfault\documents\github\chaselibrary\x64\release\chase.obj.  Using first PCH.
 LINK : warning C4727: PCH named c:\users\segfault\documents\github\chaselibrary\x64\release\chaselibrary.pch with same timestamp found in c:\users\segfault\documents\github\chaselibrary\x64\release\modifiers.obj and c:\users\segfault\documents\github\chaselibrary\x64\release\limb.obj.  Using first PCH.
-LINK : warning C4727: PCH named c:\users\segfault\documents\github\chaselibrary\x64\release\chaselibrary.pch with same timestamp found in c:\users\segfault\documents\github\chaselibrary\x64\release\object.obj and c:\users\segfault\documents\github\chaselibrary\x64\release\limb.obj.  Using first PCH.
-LINK : warning C4727: PCH named c:\users\segfault\documents\github\chaselibrary\x64\release\chaselibrary.pch with same timestamp found in c:\users\segfault\documents\github\chaselibrary\x64\release\pch.obj and c:\users\segfault\documents\github\chaselibrary\x64\release\limb.obj.  Using first PCH.
+LINK : warning C4727: PCH named c:\users\segfault\documents\github\chaselibrary\x64\release\chaselibrary.pch with same timestamp found in c:\users\segfault\documents\github\chaselibrary\x64\release\pch.obj and c:\users\segfault\documents\github\chaselibrary\x64\release\object.obj.  Using first PCH.
+LINK : warning C4727: PCH named c:\users\segfault\documents\github\chaselibrary\x64\release\chaselibrary.pch with same timestamp found in c:\users\segfault\documents\github\chaselibrary\x64\release\threadmanager.obj and c:\users\segfault\documents\github\chaselibrary\x64\release\chase.obj.  Using first PCH.
      Creating library C:\Users\segfault\Documents\GitHub\CHASELibrary\x64\Release\CHASELibrary.lib and object C:\Users\segfault\Documents\GitHub\CHASELibrary\x64\Release\CHASELibrary.exp
   Generating code
-  4 of 582 functions ( 0.7%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
+  11 of 583 functions ( 1.9%) were compiled, the rest were copied from previous compilation.
+    2 functions were new in current compilation
+    5 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   CHASELibrary.vcxproj -> C:\Users\segfault\Documents\GitHub\CHASELibrary\x64\Release\CHASELibrary.dll

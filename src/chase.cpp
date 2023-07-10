@@ -51,6 +51,6 @@ void Chase::init() {
 * Add a human
 */
 
-int Chase::addHuman(std::string name) {
+Human::human_id Chase::addHuman(std::string name) {
 	return Chase::threadMan->createHuman(name);
 }

@@ -41,14 +41,16 @@ ThreadManager::ThreadManager::ThreadManager() {
 	PLOG_DEBUG << "Electro ThreadManager Init finished.";
 }
 
-int loc = 0;
-int sub_loc = 0;
+int32_t loc = 0;
+int32_t sub_loc = 0;
+
+
 
 /*
 * Add a human into the threads
 */
 
-int ThreadManager::ThreadManager::createHuman(std::string name) {
+Human::human_id ThreadManager::ThreadManager::createHuman(std::string name) {
 	if (sub_loc > gThreads[loc]->getSize() - 1) { ++loc; }
 	if (loc > gThreads.size() - 1) {
 		PLOG_DEBUG << "Current GroupThread full, allocating a new one [(loc, sub_loc, gThreads.size()) = (" << loc << ", " << sub_loc << ", " << gThreads.size() << ")]";
@@ -58,13 +60,19 @@ int ThreadManager::ThreadManager::createHuman(std::string name) {
 		loc = 0;
 	}
 	// Create new human
-	Human::Human tmp_h(name, sub_loc + loc);
+	Human::human_id id = { loc, sub_loc };
+	Human::Human tmp_h(name, id);
+	PLOG_DEBUG << "LOC = " << loc << " SUB_LOC = " << sub_loc;
 	gThreads[loc]->addHuman(tmp_h);
-	++sub_loc;
+	++sub_loc;                                                                                                                                                                                                                                                  
 	// return id
-	return tmp_h.get_id(); // tmp
+	return id; // tmp
 }
 
+/*Human::Human* ThreadManager::ThreadManager::getHumanById(uint64_t id) {
+	uint32_t loc = (uint32_t)((id & 0xFFFFFFFF00000000LL) >> 32), sub_loc = (uint32_t)(id & 0xFFFFFFFFLL);
+	return NULL;
+}*/
 
 /*
 * Group Threads
