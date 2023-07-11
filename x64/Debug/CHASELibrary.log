@@ -1,5 +1,0 @@
-﻿  chase.cpp
-D:\msys2\home\Andre\CHASELibrary\src\chase.cpp(36,43): warning C4273: 'Chase::init': inconsistent dll linkage
-D:\msys2\home\Andre\CHASELibrary\src\include\chase.h(38,14): message : see previous definition of 'init'
-     Creating library D:\msys2\home\Andre\CHASELibrary\x64\Debug\CHASELibrary.lib and object D:\msys2\home\Andre\CHASELibrary\x64\Debug\CHASELibrary.exp
-  CHASELibrary.vcxproj -> D:\msys2\home\Andre\CHASELibrary\x64\Debug\CHASELibrary.dll

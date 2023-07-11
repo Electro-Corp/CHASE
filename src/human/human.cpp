@@ -15,6 +15,7 @@
  */
 #include <pch.h>
 #include <human/human.h>
+#include <iostream>
 /*
 * Constructer for human (crazy)
 */

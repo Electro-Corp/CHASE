@@ -152,7 +152,7 @@
     <ClInclude Include="src\include\threadmanager\threadmanager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\include\transformations\transform.h">
+    <ClInclude Include="src\include\transform\transform.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\include\object.h">

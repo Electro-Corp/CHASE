@@ -54,3 +54,15 @@ void Chase::init() {
 Human::human_id Chase::addHuman(std::string name) {
 	return Chase::threadMan->createHuman(name);
 }
+
+
+
+/*
+* Debugging
+*/
+#ifdef DEBUG
+std::string Chase::_debugGetName(Human::human_id id) {
+	Human::Human tmp = Chase::threadMan->getHumanById(id);
+	return tmp.get_name();
+}
+#endif

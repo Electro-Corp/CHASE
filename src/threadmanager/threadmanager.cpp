@@ -52,7 +52,7 @@ int32_t sub_loc = 0;
 
 Human::human_id ThreadManager::ThreadManager::createHuman(std::string name) {
 	if (sub_loc > gThreads[loc]->getSize() - 1) { ++loc; }
-	if (loc > gThreads.size() - 1) {
+	if (sub_loc > gThreads.size() - 1) {
 		PLOG_DEBUG << "Current GroupThread full, allocating a new one [(loc, sub_loc, gThreads.size()) = (" << loc << ", " << sub_loc << ", " << gThreads.size() << ")]";
 		// Allocate a new GroupThread if the latest one is full
 		GroupThread* tmp = new GroupThread(10); 
@@ -67,6 +67,17 @@ Human::human_id ThreadManager::ThreadManager::createHuman(std::string name) {
 	++sub_loc;                                                                                                                                                                                                                                                  
 	// return id
 	return id; // tmp
+}
+
+Human::Human ThreadManager::ThreadManager::getHumanById(Human::human_id id) {
+	std::vector<Human::Human> tmp = gThreads[id.loc]->getHumans();
+	if (tmp.size() < id.sub_loc) {
+		PLOG_ERROR << "TMP SIZE IS " << tmp.size() << " SUB_LOC IS " << id.sub_loc;
+	}
+	else {
+		PLOG_DEBUG << "We're good.";
+	}
+	return tmp[id.sub_loc];
 }
 
 /*Human::Human* ThreadManager::ThreadManager::getHumanById(uint64_t id) {
@@ -89,6 +100,11 @@ ThreadManager::GroupThread::GroupThread(int size) {
 
 int ThreadManager::GroupThread::getSize() {
 	return this->size;
+}
+
+
+std::vector<Human::Human> ThreadManager::GroupThread::getHumans() {
+	return this->vec;
 }
 
 void ThreadManager::GroupThread::addHuman(Human::Human _human) {

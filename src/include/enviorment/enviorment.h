@@ -21,6 +21,17 @@
 #include <../include/object.hpp>
 
 namespace Enviorment {
+	/*
+	* Contains a single sub-area of the Environment
+	*/
+
+	class Source {
+	private:
+		std::vector<Transform::Point> vertices;
+	public:
+		template<typename... Args>
+		Source(Transform::Point val, Args... args);
+	};
 
 	/*
 	* Contains the current enviorment
@@ -33,16 +44,6 @@ namespace Enviorment {
 		Enviorment();
 	};
 
-	/*
-	* Contains a single sub-area of the Environment 
-	*/
-
-	class Source {
-	private:
-		std::vector<Transform::Point> vertices;
-	public:
-		template<typename... Args>
-		Source(Transform::Point val, Args... args);
-	};
+	
 }
 #endif
