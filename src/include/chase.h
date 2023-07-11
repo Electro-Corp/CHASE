@@ -16,6 +16,9 @@
 #ifndef CHASE_H
 #define CHASE_H
 
+#define DEBUG 1
+
+
 #ifdef CHASELibrary_EXPORTS
 	#define CHAPI __declspec(dllexport)
 #else
@@ -38,6 +41,12 @@ namespace Chase {
 		CHAPI void init();
 
 		CHAPI Human::human_id addHuman(std::string name);
+
+
+		// Debug funcs
+#ifdef DEBUG
+		CHAPI std::string _debugGetName(Human::human_id id);
+#endif
 
 		// End exported functions
 	#ifdef __cplusplus

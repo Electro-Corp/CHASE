@@ -69,6 +69,17 @@ Human::human_id ThreadManager::ThreadManager::createHuman(std::string name) {
 	return id; // tmp
 }
 
+Human::Human ThreadManager::ThreadManager::getHumanById(Human::human_id id) {
+	std::vector<Human::Human> tmp = gThreads[id.loc]->getHumans();
+	if (tmp.size() < id.sub_loc) {
+		PLOG_ERROR << "TMP SIZE IS " << tmp.size() << " SUB_LOC IS " << id.sub_loc;
+	}
+	else {
+		PLOG_DEBUG << "We're good.";
+	}
+	return tmp[id.sub_loc];
+}
+
 /*Human::Human* ThreadManager::ThreadManager::getHumanById(uint64_t id) {
 	uint32_t loc = (uint32_t)((id & 0xFFFFFFFF00000000LL) >> 32), sub_loc = (uint32_t)(id & 0xFFFFFFFFLL);
 	return NULL;
@@ -89,6 +100,11 @@ ThreadManager::GroupThread::GroupThread(int size) {
 
 int ThreadManager::GroupThread::getSize() {
 	return this->size;
+}
+
+
+std::vector<Human::Human> ThreadManager::GroupThread::getHumans() {
+	return this->vec;
 }
 
 void ThreadManager::GroupThread::addHuman(Human::Human _human) {
