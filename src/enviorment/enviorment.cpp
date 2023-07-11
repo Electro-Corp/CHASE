@@ -43,7 +43,9 @@ Enviorment::Source::Source(Transform::Point value, Args... args) {
 	std::vector<Transform::Point> values{ value, args... };
 	vertices = values;
 
-	for (const auto& i : vertices) {
-		
+	for (const auto& i : regions) {
+		if (Transform::checkOverlap(i, vertices)) {
+			regions.push_back(vertices);
+		}
 	}
 }

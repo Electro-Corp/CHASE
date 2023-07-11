@@ -17,7 +17,7 @@
 #define ENVIORMENT_H
 
 #include <vector>
-#include <point.h>
+#include <transform/transform.h>
 #include <../include/object.hpp>
 
 namespace Enviorment {
@@ -28,8 +28,8 @@ namespace Enviorment {
 	class Enviorment {
 	private:
 		std::vector<Object> objects;
+		std::vector<Source> regions;
 	public:
-
 		Enviorment();
 	};
 
