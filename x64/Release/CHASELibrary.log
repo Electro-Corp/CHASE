@@ -30,9 +30,9 @@ D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(38,18): error
 E:\Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\tuple(24): message : see declaration of 'std'
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(39,18): error C2039: 'pow': is not a member of 'std'
 E:\Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\tuple(24): message : see declaration of 'std'
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(45,64): error C2039: 'vector': is not a member of 'std'
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(45,63): error C2039: 'vector': is not a member of 'std'
 E:\Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\tuple(24): message : see declaration of 'std'
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(45,70): error C2061: syntax error: identifier 'vector'
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(45,69): error C2061: syntax error: identifier 'vector'
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(51,32): error C2065: 'shape': undeclared identifier
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(51,30): error C2530: 'p0': references must be initialized
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(52,32): error C2065: 'shape': undeclared identifier
@@ -43,26 +43,26 @@ D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,27): error
 E:\Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\tuple(24): message : see declaration of 'std'
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,33): error C2065: 'vector': undeclared identifier
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,45): error C2275: 'Transform::Point': expected an expression instead of a type
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,53): error C2065: 'shape1': undeclared identifier
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,66): error C2039: 'vector': is not a member of 'std'
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,52): error C2065: 'shape1': undeclared identifier
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,65): error C2039: 'vector': is not a member of 'std'
 E:\Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\tuple(24): message : see declaration of 'std'
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,72): error C2065: 'vector': undeclared identifier
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,84): error C2275: 'Transform::Point': expected an expression instead of a type
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,92): error C2065: 'shape2': undeclared identifier
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,100): error C2143: syntax error: missing ';' before '{'
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,100): error C2447: '{': missing function header (old-style formal list?)
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,71): error C2065: 'vector': undeclared identifier
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,83): error C2275: 'Transform::Point': expected an expression instead of a type
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,90): error C2065: 'shape2': undeclared identifier
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,98): error C2143: syntax error: missing ';' before '{'
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,98): error C2447: '{': missing function header (old-style formal list?)
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,28): error C2039: 'vector': is not a member of 'std'
 E:\Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\tuple(24): message : see declaration of 'std'
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,34): error C2065: 'vector': undeclared identifier
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,46): error C2275: 'Transform::Point': expected an expression instead of a type
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,54): error C2065: 'shape1': undeclared identifier
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,67): error C2039: 'vector': is not a member of 'std'
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,53): error C2065: 'shape1': undeclared identifier
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,66): error C2039: 'vector': is not a member of 'std'
 E:\Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\tuple(24): message : see declaration of 'std'
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,73): error C2065: 'vector': undeclared identifier
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,85): error C2275: 'Transform::Point': expected an expression instead of a type
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,93): error C2065: 'shape2': undeclared identifier
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,101): error C2143: syntax error: missing ';' before '{'
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,101): error C2447: '{': missing function header (old-style formal list?)
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,72): error C2065: 'vector': undeclared identifier
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,84): error C2275: 'Transform::Point': expected an expression instead of a type
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,91): error C2065: 'shape2': undeclared identifier
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,99): error C2143: syntax error: missing ';' before '{'
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,99): error C2447: '{': missing function header (old-style formal list?)
   limb.cpp
   modifiers.cpp
   object.cpp
@@ -74,9 +74,9 @@ D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(38,18): error
 E:\Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\tuple(24): message : see declaration of 'std'
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(39,18): error C2039: 'pow': is not a member of 'std'
 E:\Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\tuple(24): message : see declaration of 'std'
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(45,64): error C2039: 'vector': is not a member of 'std'
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(45,63): error C2039: 'vector': is not a member of 'std'
 E:\Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\tuple(24): message : see declaration of 'std'
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(45,70): error C2061: syntax error: identifier 'vector'
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(45,69): error C2061: syntax error: identifier 'vector'
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(51,32): error C2065: 'shape': undeclared identifier
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(51,30): error C2530: 'p0': references must be initialized
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(52,32): error C2065: 'shape': undeclared identifier
@@ -87,26 +87,26 @@ D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,27): error
 E:\Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\tuple(24): message : see declaration of 'std'
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,33): error C2065: 'vector': undeclared identifier
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,45): error C2275: 'Transform::Point': expected an expression instead of a type
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,53): error C2065: 'shape1': undeclared identifier
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,66): error C2039: 'vector': is not a member of 'std'
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,52): error C2065: 'shape1': undeclared identifier
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,65): error C2039: 'vector': is not a member of 'std'
 E:\Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\tuple(24): message : see declaration of 'std'
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,72): error C2065: 'vector': undeclared identifier
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,84): error C2275: 'Transform::Point': expected an expression instead of a type
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,92): error C2065: 'shape2': undeclared identifier
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,100): error C2143: syntax error: missing ';' before '{'
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,100): error C2447: '{': missing function header (old-style formal list?)
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,71): error C2065: 'vector': undeclared identifier
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,83): error C2275: 'Transform::Point': expected an expression instead of a type
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,90): error C2065: 'shape2': undeclared identifier
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,98): error C2143: syntax error: missing ';' before '{'
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,98): error C2447: '{': missing function header (old-style formal list?)
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,28): error C2039: 'vector': is not a member of 'std'
 E:\Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\tuple(24): message : see declaration of 'std'
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,34): error C2065: 'vector': undeclared identifier
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,46): error C2275: 'Transform::Point': expected an expression instead of a type
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,54): error C2065: 'shape1': undeclared identifier
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,67): error C2039: 'vector': is not a member of 'std'
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,53): error C2065: 'shape1': undeclared identifier
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,66): error C2039: 'vector': is not a member of 'std'
 E:\Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\tuple(24): message : see declaration of 'std'
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,73): error C2065: 'vector': undeclared identifier
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,85): error C2275: 'Transform::Point': expected an expression instead of a type
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,93): error C2065: 'shape2': undeclared identifier
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,101): error C2143: syntax error: missing ';' before '{'
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,101): error C2447: '{': missing function header (old-style formal list?)
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,72): error C2065: 'vector': undeclared identifier
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,84): error C2275: 'Transform::Point': expected an expression instead of a type
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,91): error C2065: 'shape2': undeclared identifier
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,99): error C2143: syntax error: missing ';' before '{'
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,99): error C2447: '{': missing function header (old-style formal list?)
   pch.cpp
   threadmanager.cpp
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(36,42): error C2039: 'sqrt': is not a member of 'std'
@@ -117,9 +117,9 @@ D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(38,18): error
 E:\Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\tuple(24): message : see declaration of 'std'
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(39,18): error C2039: 'pow': is not a member of 'std'
 E:\Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\tuple(24): message : see declaration of 'std'
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(45,64): error C2039: 'vector': is not a member of 'std'
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(45,63): error C2039: 'vector': is not a member of 'std'
 E:\Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\tuple(24): message : see declaration of 'std'
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(45,70): error C2061: syntax error: identifier 'vector'
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(45,69): error C2061: syntax error: identifier 'vector'
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(51,32): error C2065: 'shape': undeclared identifier
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(51,30): error C2530: 'p0': references must be initialized
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(52,32): error C2065: 'shape': undeclared identifier
@@ -130,23 +130,23 @@ D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,27): error
 E:\Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\tuple(24): message : see declaration of 'std'
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,33): error C2065: 'vector': undeclared identifier
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,45): error C2275: 'Transform::Point': expected an expression instead of a type
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,53): error C2065: 'shape1': undeclared identifier
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,66): error C2039: 'vector': is not a member of 'std'
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,52): error C2065: 'shape1': undeclared identifier
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,65): error C2039: 'vector': is not a member of 'std'
 E:\Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\tuple(24): message : see declaration of 'std'
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,72): error C2065: 'vector': undeclared identifier
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,84): error C2275: 'Transform::Point': expected an expression instead of a type
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,92): error C2065: 'shape2': undeclared identifier
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,100): error C2143: syntax error: missing ';' before '{'
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,100): error C2447: '{': missing function header (old-style formal list?)
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,71): error C2065: 'vector': undeclared identifier
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,83): error C2275: 'Transform::Point': expected an expression instead of a type
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,90): error C2065: 'shape2': undeclared identifier
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,98): error C2143: syntax error: missing ';' before '{'
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(63,98): error C2447: '{': missing function header (old-style formal list?)
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,28): error C2039: 'vector': is not a member of 'std'
 E:\Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\tuple(24): message : see declaration of 'std'
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,34): error C2065: 'vector': undeclared identifier
 D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,46): error C2275: 'Transform::Point': expected an expression instead of a type
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,54): error C2065: 'shape1': undeclared identifier
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,67): error C2039: 'vector': is not a member of 'std'
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,53): error C2065: 'shape1': undeclared identifier
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,66): error C2039: 'vector': is not a member of 'std'
 E:\Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\tuple(24): message : see declaration of 'std'
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,73): error C2065: 'vector': undeclared identifier
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,85): error C2275: 'Transform::Point': expected an expression instead of a type
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,93): error C2065: 'shape2': undeclared identifier
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,101): error C2143: syntax error: missing ';' before '{'
-D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,101): error C2447: '{': missing function header (old-style formal list?)
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,72): error C2065: 'vector': undeclared identifier
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,84): error C2275: 'Transform::Point': expected an expression instead of a type
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,91): error C2065: 'shape2': undeclared identifier
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,99): error C2143: syntax error: missing ';' before '{'
+D:\msys2\home\Andre\CHASELibrary\src\include\transform\transform.h(99,99): error C2447: '{': missing function header (old-style formal list?)

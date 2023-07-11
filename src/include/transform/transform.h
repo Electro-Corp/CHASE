@@ -31,7 +31,7 @@ namespace Transform {
     };
 
    
-    double calculateTriangleArea(Transform::Point& p0, Transform::Point& p1, Transform::Point& p2) {
+    double calculateTriangleArea(Transform::Point p0, Transform::Point p1, Transform::Point p2) {
         // Calculate the area of a triangle in 3D space
         double crossProductLength = std::sqrt(
             std::pow((p1.y - p0.y) * (p2.z - p0.z) - (p1.z - p0.z) * (p2.y - p0.y), 2) +
@@ -42,7 +42,7 @@ namespace Transform {
         return 0.5 * crossProductLength;
     }
 
-    static bool checkPointInside(Transform::Point& point, std::vector<Transform::Point>& shape) {
+    static bool checkPointInside(Transform::Point point, std::vector<Transform::Point> shape) {
         // Check if a point is inside a polygon (assuming it is a simple polygon without self-intersections)
         // You can implement a point-in-polygon test here based on your requirements
 
@@ -60,7 +60,7 @@ namespace Transform {
         return (areaPBC + areaPCA + areaPAB) <= areaABC;
     }
 
-    bool checkInside(std::vector<Transform::Point>& shape1, std::vector<Transform::Point>& shape2) {
+    bool checkInside(std::vector<Transform::Point> shape1, std::vector<Transform::Point> shape2) {
         // Check if all points of shape1 are inside shape2
         for (Transform::Point& p : shape1) {
             if (!checkPointInside(p, shape2)) {
@@ -71,7 +71,7 @@ namespace Transform {
         return true; // All points are inside
     }
 
-    bool checkLineSegmentIntersection(Transform::Point& p1, Transform::Point& p2,
+    bool checkLineSegmentIntersection(Transform::Point p1, Transform::Point p2,
         Transform::Point& q1, Transform::Point& q2) {
         // Check if the line segments intersect using a simple 2D algorithm
         // You can extend this to 3D if necessary
@@ -96,7 +96,7 @@ namespace Transform {
     }
 
     // Returns true the passed two vectors of points are overlapping in any 
-    bool checkOverlap(std::vector<Transform::Point>& shape1, std::vector<Transform::Point>& shape2) {
+    bool checkOverlap(std::vector<Transform::Point> shape1, std::vector<Transform::Point> shape2) {
         // Check if any of the edges of shape1 intersect with any of the faces of shape2
         for (size_t i = 0; i < shape1.size(); ++i) {
             Transform::Point& p1 = shape1[i];
