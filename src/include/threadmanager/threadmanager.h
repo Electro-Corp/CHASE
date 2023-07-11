@@ -35,6 +35,7 @@ namespace ThreadManager {
 		// Getters
 		int getSize();
 		void addHuman(Human::Human _human);
+		std::vector<Human::Human> getHumans();
 		// Funcs
 
 	};
@@ -51,6 +52,7 @@ namespace ThreadManager {
 
 		/* Human stuff */
 		Human::human_id createHuman(std::string name);
+		Human::Human getHumanById(Human::human_id id);
 		//Human::Human* getHumanById(uint64_t id) {
 
 	};
