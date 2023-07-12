@@ -8,9 +8,8 @@ C:\Users\segfault\Documents\GitHub\CHASELibrary\src\chase.cpp(54,24): warning C4
 C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\chase.h(43,25): message : see previous definition of 'addHuman'
 C:\Users\segfault\Documents\GitHub\CHASELibrary\src\chase.cpp(64,20): warning C4273: 'Chase::_debugGetName': inconsistent dll linkage
 C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\chase.h(48,21): message : see previous definition of '_debugGetName'
-  dllmain.cpp
   enviorment.cpp
-LINK : warning C4727: PCH named c:\users\segfault\documents\github\chaselibrary\x64\release\chaselibrary.pch with same timestamp found in c:\users\segfault\documents\github\chaselibrary\x64\release\dllmain.obj and c:\users\segfault\documents\github\chaselibrary\x64\release\chase.obj.  Using first PCH.
+LINK : warning C4727: PCH named c:\users\segfault\documents\github\chaselibrary\x64\release\chaselibrary.pch with same timestamp found in c:\users\segfault\documents\github\chaselibrary\x64\release\enviorment.obj and c:\users\segfault\documents\github\chaselibrary\x64\release\chase.obj.  Using first PCH.
 enviorment.obj : error LNK2005: "bool __cdecl Transform::checkOverlap(class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >,class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >)" (?checkOverlap@Transform@@YA_NV?$vector@VPoint@Transform@@V?$allocator@VPoint@Transform@@@std@@@std@@0@Z) already defined in chase.obj
 enviorment.obj : error LNK2005: "bool __cdecl Transform::checkLineSegmentIntersection(class Transform::Point,class Transform::Point,class Transform::Point &,class Transform::Point &)" (?checkLineSegmentIntersection@Transform@@YA_NVPoint@1@0AEAV21@1@Z) already defined in chase.obj
 enviorment.obj : error LNK2005: "bool __cdecl Transform::checkInside(class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >,class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >)" (?checkInside@Transform@@YA_NV?$vector@VPoint@Transform@@V?$allocator@VPoint@Transform@@@std@@@std@@0@Z) already defined in chase.obj

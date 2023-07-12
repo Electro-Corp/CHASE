@@ -34,12 +34,17 @@ Enviorment::Enviorment::Enviorment() {
 	// 
 	std::string status = STATUS_OK;
 	PLOG_DEBUG << "Enviorment Intilizing finished - [" << status << "]";
+
+	if (status != STATUS_OK || STATUS_ISSUES) {
+		PLOG_ERROR << "Enviorment init failed.";
+	}
 }
 
-void Enviorment::Enviorment::createSources() {
-	for (const auto& i : regions) {
-		if (Transform::checkOverlap(i, vertices)) {
-			regions.push_back(vertices);
+void Enviorment::Enviorment::addSource(Source src) {
+	for (Source i : regions) {
+		if (Transform::checkOverlap(i.getVertices(), src.getVertices())) {
+			regions.push_back(src);
+			break;
 		}
 	}
 }
@@ -55,4 +60,8 @@ Enviorment::Source::Source(Transform::Point value, Args... args) {
 	vertices = values;
 
 	
+}
+
+std::vector<Transform::Point> Enviorment::Source::getVertices() {
+	return vertices;
 }
