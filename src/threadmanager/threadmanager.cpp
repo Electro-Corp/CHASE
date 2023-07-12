@@ -66,16 +66,13 @@ Human::human_id ThreadManager::ThreadManager::createHuman(std::string name) {
 	gThreads[loc]->addHuman(tmp_h);
 	++sub_loc;                                                                                                                                                                                                                                                  
 	// return id
-	return id; // tmp
+	return id;
 }
 
 Human::Human ThreadManager::ThreadManager::getHumanById(Human::human_id id) {
 	std::vector<Human::Human> tmp = gThreads[id.loc]->getHumans();
 	if (tmp.size() < id.sub_loc) {
 		PLOG_ERROR << "TMP SIZE IS " << tmp.size() << " SUB_LOC IS " << id.sub_loc;
-	}
-	else {
-		PLOG_DEBUG << "We're good.";
 	}
 	return tmp[id.sub_loc];
 }

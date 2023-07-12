@@ -19,9 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Error.cpp" />
     <ClCompile Include="src\chase.cpp" />
     <ClCompile Include="src\dllmain.cpp" />
     <ClCompile Include="src\enviorment\enviorment.cpp" />
+    <ClCompile Include="src\error\error.cpp" />
     <ClCompile Include="src\human\human.cpp" />
     <ClCompile Include="src\human\limb.cpp" />
     <ClCompile Include="src\human\modifiers.cpp" />
@@ -30,8 +32,10 @@
     <ClCompile Include="src\threadmanager\threadmanager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Error.h" />
     <ClInclude Include="src\include\chase.h" />
     <ClInclude Include="src\include\enviorment\enviorment.h" />
+    <ClInclude Include="src\include\error\error.h" />
     <ClInclude Include="src\include\framework.h" />
     <ClInclude Include="src\include\human\human.h" />
     <ClInclude Include="src\include\human\limb.h" />
