@@ -44,9 +44,16 @@ namespace Transform {
 
     static bool checkPointInside(Transform::Point point, std::vector<Transform::Point> shape) {
         // Check if a point is inside a polygon (assuming it is a simple polygon without self-intersections)
-        // You can implement a point-in-polygon test here based on your requirements
 
-        // For simplicity, let's assume the shape is a triangle and use barycentric coordinates
+        // For simplicity, this assumes the shape is a triangle
+
+        /*
+        *
+        * TODO:
+        * This is Probably STUPID so I will add a TODO: Fix This (hopefully so that we fix this and make it acctually good)
+        * TODO:
+        *
+        */
 
         Transform::Point& p0 = shape[0];
         Transform::Point& p1 = shape[1];
