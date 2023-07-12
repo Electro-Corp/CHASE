@@ -52,12 +52,12 @@ int32_t sub_loc = 0;
 
 Human::human_id ThreadManager::ThreadManager::createHuman(std::string name) {
 	if (sub_loc > gThreads[loc]->getSize() - 1) { ++loc; }
-	if (sub_loc > gThreads.size() - 1) {
+	if (loc > gThreads.size() - 1) {
 		PLOG_DEBUG << "Current GroupThread full, allocating a new one [(loc, sub_loc, gThreads.size()) = (" << loc << ", " << sub_loc << ", " << gThreads.size() << ")]";
 		// Allocate a new GroupThread if the latest one is full
 		GroupThread* tmp = new GroupThread(10); 
 		gThreads.push_back(tmp);
-		loc = 0;
+		sub_loc = 0;
 	}
 	// Create new human
 	Human::human_id id = { loc, sub_loc };
@@ -66,16 +66,13 @@ Human::human_id ThreadManager::ThreadManager::createHuman(std::string name) {
 	gThreads[loc]->addHuman(tmp_h);
 	++sub_loc;                                                                                                                                                                                                                                                  
 	// return id
-	return id; // tmp
+	return id;
 }
 
 Human::Human ThreadManager::ThreadManager::getHumanById(Human::human_id id) {
 	std::vector<Human::Human> tmp = gThreads[id.loc]->getHumans();
 	if (tmp.size() < id.sub_loc) {
 		PLOG_ERROR << "TMP SIZE IS " << tmp.size() << " SUB_LOC IS " << id.sub_loc;
-	}
-	else {
-		PLOG_DEBUG << "We're good.";
 	}
 	return tmp[id.sub_loc];
 }
