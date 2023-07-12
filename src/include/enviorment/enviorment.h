@@ -42,6 +42,13 @@ namespace Enviorment {
 		std::vector<Source> regions;
 	public:
 		Enviorment();
+
+		// Create sources
+		void createSources();
+		
+		// Getters and setters
+
+		
 	};
 
 	

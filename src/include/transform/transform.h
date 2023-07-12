@@ -20,6 +20,7 @@
 
 #include <tuple>
 #include <valarray>
+#include <vector>
 
 typedef std::tuple<float, float, float> vector3;
 

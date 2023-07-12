@@ -23,7 +23,7 @@
 #define STATUS_OK "OK"
 #define STATUS_ISSUES "NON-FATAL ISSUES"
 #define STATUS_FAILED "FAILED"
-#define STATUS_BAD "CHINMAY"
+#define STATUS_BAD "ANDREW"
 
 /*
 * Constructer (lamo)
@@ -32,9 +32,20 @@
 Enviorment::Enviorment::Enviorment() {
 	PLOG_DEBUG << "Enviorment Intilizing..";
 	// 
-	std::string status = STATUS_BAD;
+	std::string status = STATUS_OK;
 	PLOG_DEBUG << "Enviorment Intilizing finished - [" << status << "]";
 }
+
+void Enviorment::Enviorment::createSources() {
+	for (const auto& i : regions) {
+		if (Transform::checkOverlap(i, vertices)) {
+			regions.push_back(vertices);
+		}
+	}
+}
+
+// Getter / setters
+
 
 template<typename... Args>
 // Note for User: Please only pass ints please dear god I will force you to make your own vecotr
@@ -43,9 +54,5 @@ Enviorment::Source::Source(Transform::Point value, Args... args) {
 	std::vector<Transform::Point> values{ value, args... };
 	vertices = values;
 
-	for (const auto& i : regions) {
-		if (Transform::checkOverlap(i, vertices)) {
-			regions.push_back(vertices);
-		}
-	}
+	
 }

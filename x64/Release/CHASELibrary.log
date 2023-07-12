@@ -1,5 +1,4 @@
 ﻿E:\vs2022\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1116,5): warning MSB8027: Two or more files with the name of Error.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Error.cpp, src\error\error.cpp.
-  Error.cpp
   chase.cpp
 C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\chase.h(48,54): warning C4190: '_debugGetName' has C-linkage specified, but returns UDT 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' which is incompatible with C
 E:\vs2022\VC\Tools\MSVC\14.36.32532\include\xstring(5155,29): message : see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
@@ -11,117 +10,23 @@ C:\Users\segfault\Documents\GitHub\CHASELibrary\src\chase.cpp(64,20): warning C4
 C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\chase.h(48,21): message : see previous definition of '_debugGetName'
   dllmain.cpp
   enviorment.cpp
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\enviorment\enviorment.cpp(46,23): error C3861: 'regions': identifier not found
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\enviorment\enviorment.h(33,3): message : This diagnostic occurred in the compiler generated function 'Enviorment::Source::Source(Transform::Point,Args...)'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\enviorment\enviorment.cpp(48,4): error C3861: 'regions': identifier not found
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\enviorment\enviorment.h(33,3): message : This diagnostic occurred in the compiler generated function 'Enviorment::Source::Source(Transform::Point,Args...)'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\enviorment\enviorment.cpp(46,23): error C2065: 'regions': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\enviorment\enviorment.h(33,3): message : This diagnostic occurred in the compiler generated function 'Enviorment::Source::Source(Transform::Point,Args...)'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\enviorment\enviorment.cpp(48,4): error C2065: 'regions': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\enviorment\enviorment.h(33,3): message : This diagnostic occurred in the compiler generated function 'Enviorment::Source::Source(Transform::Point,Args...)'
-  error.cpp
-  human.cpp
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(46,63): error C2039: 'vector': is not a member of 'std'
-E:\vs2022\VC\Tools\MSVC\14.36.32532\include\valarray(21,1): message : see declaration of 'std'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(46,69): error C2061: syntax error: identifier 'vector'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(59,32): error C2065: 'shape': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(59,30): error C2530: 'p0': references must be initialized
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(60,32): error C2065: 'shape': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(60,30): error C2530: 'p1': references must be initialized
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(61,32): error C2065: 'shape': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(61,30): error C2530: 'p2': references must be initialized
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,27): error C2039: 'vector': is not a member of 'std'
-E:\vs2022\VC\Tools\MSVC\14.36.32532\include\valarray(21,1): message : see declaration of 'std'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,33): error C2065: 'vector': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,45): error C2275: 'Transform::Point': expected an expression instead of a type
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,52): error C2065: 'shape1': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,65): error C2039: 'vector': is not a member of 'std'
-E:\vs2022\VC\Tools\MSVC\14.36.32532\include\valarray(21,1): message : see declaration of 'std'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,71): error C2065: 'vector': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,83): error C2275: 'Transform::Point': expected an expression instead of a type
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,90): error C2065: 'shape2': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,98): error C2143: syntax error: missing ';' before '{'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,98): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,28): error C2039: 'vector': is not a member of 'std'
-E:\vs2022\VC\Tools\MSVC\14.36.32532\include\valarray(21,1): message : see declaration of 'std'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,34): error C2065: 'vector': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,46): error C2275: 'Transform::Point': expected an expression instead of a type
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,53): error C2065: 'shape1': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,66): error C2039: 'vector': is not a member of 'std'
-E:\vs2022\VC\Tools\MSVC\14.36.32532\include\valarray(21,1): message : see declaration of 'std'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,72): error C2065: 'vector': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,84): error C2275: 'Transform::Point': expected an expression instead of a type
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,91): error C2065: 'shape2': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,99): error C2143: syntax error: missing ';' before '{'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,99): error C2447: '{': missing function header (old-style formal list?)
-  limb.cpp
-  modifiers.cpp
-  object.cpp
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(46,63): error C2039: 'vector': is not a member of 'std'
-E:\vs2022\VC\Tools\MSVC\14.36.32532\include\valarray(21,1): message : see declaration of 'std'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(46,69): error C2061: syntax error: identifier 'vector'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(59,32): error C2065: 'shape': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(59,30): error C2530: 'p0': references must be initialized
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(60,32): error C2065: 'shape': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(60,30): error C2530: 'p1': references must be initialized
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(61,32): error C2065: 'shape': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(61,30): error C2530: 'p2': references must be initialized
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,27): error C2039: 'vector': is not a member of 'std'
-E:\vs2022\VC\Tools\MSVC\14.36.32532\include\valarray(21,1): message : see declaration of 'std'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,33): error C2065: 'vector': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,45): error C2275: 'Transform::Point': expected an expression instead of a type
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,52): error C2065: 'shape1': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,65): error C2039: 'vector': is not a member of 'std'
-E:\vs2022\VC\Tools\MSVC\14.36.32532\include\valarray(21,1): message : see declaration of 'std'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,71): error C2065: 'vector': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,83): error C2275: 'Transform::Point': expected an expression instead of a type
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,90): error C2065: 'shape2': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,98): error C2143: syntax error: missing ';' before '{'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,98): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,28): error C2039: 'vector': is not a member of 'std'
-E:\vs2022\VC\Tools\MSVC\14.36.32532\include\valarray(21,1): message : see declaration of 'std'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,34): error C2065: 'vector': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,46): error C2275: 'Transform::Point': expected an expression instead of a type
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,53): error C2065: 'shape1': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,66): error C2039: 'vector': is not a member of 'std'
-E:\vs2022\VC\Tools\MSVC\14.36.32532\include\valarray(21,1): message : see declaration of 'std'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,72): error C2065: 'vector': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,84): error C2275: 'Transform::Point': expected an expression instead of a type
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,91): error C2065: 'shape2': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,99): error C2143: syntax error: missing ';' before '{'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,99): error C2447: '{': missing function header (old-style formal list?)
-  pch.cpp
-  threadmanager.cpp
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(46,63): error C2039: 'vector': is not a member of 'std'
-E:\vs2022\VC\Tools\MSVC\14.36.32532\include\valarray(21,1): message : see declaration of 'std'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(46,69): error C2061: syntax error: identifier 'vector'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(59,32): error C2065: 'shape': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(59,30): error C2530: 'p0': references must be initialized
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(60,32): error C2065: 'shape': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(60,30): error C2530: 'p1': references must be initialized
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(61,32): error C2065: 'shape': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(61,30): error C2530: 'p2': references must be initialized
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,27): error C2039: 'vector': is not a member of 'std'
-E:\vs2022\VC\Tools\MSVC\14.36.32532\include\valarray(21,1): message : see declaration of 'std'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,33): error C2065: 'vector': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,45): error C2275: 'Transform::Point': expected an expression instead of a type
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,52): error C2065: 'shape1': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,65): error C2039: 'vector': is not a member of 'std'
-E:\vs2022\VC\Tools\MSVC\14.36.32532\include\valarray(21,1): message : see declaration of 'std'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,71): error C2065: 'vector': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,83): error C2275: 'Transform::Point': expected an expression instead of a type
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,90): error C2065: 'shape2': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,98): error C2143: syntax error: missing ';' before '{'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(71,98): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,28): error C2039: 'vector': is not a member of 'std'
-E:\vs2022\VC\Tools\MSVC\14.36.32532\include\valarray(21,1): message : see declaration of 'std'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,34): error C2065: 'vector': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,46): error C2275: 'Transform::Point': expected an expression instead of a type
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,53): error C2065: 'shape1': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,66): error C2039: 'vector': is not a member of 'std'
-E:\vs2022\VC\Tools\MSVC\14.36.32532\include\valarray(21,1): message : see declaration of 'std'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,72): error C2065: 'vector': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,84): error C2275: 'Transform::Point': expected an expression instead of a type
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,91): error C2065: 'shape2': undeclared identifier
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,99): error C2143: syntax error: missing ';' before '{'
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\transform\transform.h(107,99): error C2447: '{': missing function header (old-style formal list?)
+LINK : warning C4727: PCH named c:\users\segfault\documents\github\chaselibrary\x64\release\chaselibrary.pch with same timestamp found in c:\users\segfault\documents\github\chaselibrary\x64\release\dllmain.obj and c:\users\segfault\documents\github\chaselibrary\x64\release\chase.obj.  Using first PCH.
+enviorment.obj : error LNK2005: "bool __cdecl Transform::checkOverlap(class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >,class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >)" (?checkOverlap@Transform@@YA_NV?$vector@VPoint@Transform@@V?$allocator@VPoint@Transform@@@std@@@std@@0@Z) already defined in chase.obj
+enviorment.obj : error LNK2005: "bool __cdecl Transform::checkLineSegmentIntersection(class Transform::Point,class Transform::Point,class Transform::Point &,class Transform::Point &)" (?checkLineSegmentIntersection@Transform@@YA_NVPoint@1@0AEAV21@1@Z) already defined in chase.obj
+enviorment.obj : error LNK2005: "bool __cdecl Transform::checkInside(class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >,class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >)" (?checkInside@Transform@@YA_NV?$vector@VPoint@Transform@@V?$allocator@VPoint@Transform@@@std@@@std@@0@Z) already defined in chase.obj
+enviorment.obj : error LNK2005: "double __cdecl Transform::calculateTriangleArea(class Transform::Point,class Transform::Point,class Transform::Point)" (?calculateTriangleArea@Transform@@YANVPoint@1@00@Z) already defined in chase.obj
+x64\Release\error.obj : warning LNK4042: object specified more than once; extras ignored
+human.obj : error LNK2005: "bool __cdecl Transform::checkOverlap(class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >,class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >)" (?checkOverlap@Transform@@YA_NV?$vector@VPoint@Transform@@V?$allocator@VPoint@Transform@@@std@@@std@@0@Z) already defined in chase.obj
+human.obj : error LNK2005: "bool __cdecl Transform::checkLineSegmentIntersection(class Transform::Point,class Transform::Point,class Transform::Point &,class Transform::Point &)" (?checkLineSegmentIntersection@Transform@@YA_NVPoint@1@0AEAV21@1@Z) already defined in chase.obj
+human.obj : error LNK2005: "bool __cdecl Transform::checkInside(class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >,class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >)" (?checkInside@Transform@@YA_NV?$vector@VPoint@Transform@@V?$allocator@VPoint@Transform@@@std@@@std@@0@Z) already defined in chase.obj
+human.obj : error LNK2005: "double __cdecl Transform::calculateTriangleArea(class Transform::Point,class Transform::Point,class Transform::Point)" (?calculateTriangleArea@Transform@@YANVPoint@1@00@Z) already defined in chase.obj
+object.obj : error LNK2005: "bool __cdecl Transform::checkOverlap(class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >,class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >)" (?checkOverlap@Transform@@YA_NV?$vector@VPoint@Transform@@V?$allocator@VPoint@Transform@@@std@@@std@@0@Z) already defined in chase.obj
+object.obj : error LNK2005: "bool __cdecl Transform::checkLineSegmentIntersection(class Transform::Point,class Transform::Point,class Transform::Point &,class Transform::Point &)" (?checkLineSegmentIntersection@Transform@@YA_NVPoint@1@0AEAV21@1@Z) already defined in chase.obj
+object.obj : error LNK2005: "bool __cdecl Transform::checkInside(class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >,class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >)" (?checkInside@Transform@@YA_NV?$vector@VPoint@Transform@@V?$allocator@VPoint@Transform@@@std@@@std@@0@Z) already defined in chase.obj
+object.obj : error LNK2005: "double __cdecl Transform::calculateTriangleArea(class Transform::Point,class Transform::Point,class Transform::Point)" (?calculateTriangleArea@Transform@@YANVPoint@1@00@Z) already defined in chase.obj
+threadmanager.obj : error LNK2005: "bool __cdecl Transform::checkOverlap(class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >,class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >)" (?checkOverlap@Transform@@YA_NV?$vector@VPoint@Transform@@V?$allocator@VPoint@Transform@@@std@@@std@@0@Z) already defined in chase.obj
+threadmanager.obj : error LNK2005: "bool __cdecl Transform::checkLineSegmentIntersection(class Transform::Point,class Transform::Point,class Transform::Point &,class Transform::Point &)" (?checkLineSegmentIntersection@Transform@@YA_NVPoint@1@0AEAV21@1@Z) already defined in chase.obj
+threadmanager.obj : error LNK2005: "bool __cdecl Transform::checkInside(class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >,class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >)" (?checkInside@Transform@@YA_NV?$vector@VPoint@Transform@@V?$allocator@VPoint@Transform@@@std@@@std@@0@Z) already defined in chase.obj
+threadmanager.obj : error LNK2005: "double __cdecl Transform::calculateTriangleArea(class Transform::Point,class Transform::Point,class Transform::Point)" (?calculateTriangleArea@Transform@@YANVPoint@1@00@Z) already defined in chase.obj
+     Creating library C:\Users\segfault\Documents\GitHub\CHASELibrary\x64\Release\CHASELibrary.lib and object C:\Users\segfault\Documents\GitHub\CHASELibrary\x64\Release\CHASELibrary.exp
+C:\Users\segfault\Documents\GitHub\CHASELibrary\x64\Release\CHASELibrary.dll : fatal error LNK1169: one or more multiply defined symbols found
