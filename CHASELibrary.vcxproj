@@ -71,7 +71,7 @@
     <ClInclude Include="src\include\plog\Util.h" />
     <ClInclude Include="src\include\plog\WinApi.h" />
     <ClInclude Include="src\include\threadmanager\threadmanager.h" />
-    <ClInclude Include="src\include\transformations\transform.h" />
+    <ClInclude Include="src\include\transform\transform.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

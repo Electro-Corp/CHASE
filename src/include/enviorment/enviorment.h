@@ -17,10 +17,21 @@
 #define ENVIORMENT_H
 
 #include <vector>
-
+#include <transform/transform.h>
 #include <../include/object.hpp>
 
 namespace Enviorment {
+	/*
+	* Contains a single sub-area of the Environment
+	*/
+
+	class Source {
+	private:
+		std::vector<Transform::Point> vertices;
+	public:
+		template<typename... Args>
+		Source(Transform::Point val, Args... args);
+	};
 
 	/*
 	* Contains the current enviorment
@@ -28,8 +39,11 @@ namespace Enviorment {
 	class Enviorment {
 	private:
 		std::vector<Object> objects;
+		std::vector<Source> regions;
 	public:
 		Enviorment();
 	};
+
+	
 }
 #endif
