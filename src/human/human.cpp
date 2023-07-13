@@ -54,3 +54,56 @@ std::string Human::Human::get_name() {
 Human::human_id Human::Human::get_id() {
 	return this->id;
 }
+
+/*
+* Unfinished, change void to some return 
+* data in the future
+* 
+* == Notes on mainUpdate
+* > It is the full update cycle, meaning that it 
+* looks at the FULL viewable enviorment
+*/
+void Human::Human::humanMainUpdate(/*ARGS NEEDED*/) {
+	float survivabilityProbability; // 0.0f - 100.0f (it could be 0.0f to 1.0f, but i feel like 100.0f is more... uhhhh... better
+
+	/*
+	* General algorithim structure
+	*/
+
+	/*
+	* Use some function in Transform to get all objects visible
+	*/
+
+	// 
+	/*
+	* Different types of objects have 
+	* different modifers/types
+	* 
+	* > Human
+	*	> Check for if on self or enemys team, then jump to some
+	*	  sub routine relating to that
+	* > Cover
+	*	> Calculate if self should jump to cover
+	* > Other
+	*	> add more as time goes on
+	*/
+
+
+
+
+	// SUBS
+
+	/*
+	*	HUMAN_SELF_TEAM
+	*/
+
+	// idk
+
+	/*
+	*	HUMAN_ENEMY_TEAM
+	*/
+
+	// Calculate probability
+	// of surviving an encounter
+	// decide from there
+}

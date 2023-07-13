@@ -46,6 +46,9 @@ namespace Human {
 		Human(std::string name, human_id id);
 		std::string get_name();
 		human_id get_id();
+
+		// 'void' is tmp, change it to some return data
+		void humanMainUpdate(/*ARGS NEEDED*/);
 	};
 }
 #endif
