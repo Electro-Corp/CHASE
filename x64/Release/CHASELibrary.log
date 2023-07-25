@@ -49,4 +49,17 @@ C:\Users\segfault\Documents\GitHub\CHASELibrary\src\object.cpp(8,28): message : 
   pch.cpp
   threadmanager.cpp
   transform.cpp
-C:\Users\segfault\Documents\GitHub\CHASELibrary\src\transform\transform.cpp(121,1): error C2857: '#include' statement specified with the /Ycpch.h command-line option was not found in the source file
+LINK : warning C4727: PCH named c:\users\segfault\documents\github\chaselibrary\x64\release\chaselibrary.pch with same timestamp found in c:\users\segfault\documents\github\chaselibrary\x64\release\dllmain.obj and c:\users\segfault\documents\github\chaselibrary\x64\release\chase.obj.  Using first PCH.
+LINK : warning C4727: PCH named c:\users\segfault\documents\github\chaselibrary\x64\release\chaselibrary.pch with same timestamp found in c:\users\segfault\documents\github\chaselibrary\x64\release\enviorment.obj and c:\users\segfault\documents\github\chaselibrary\x64\release\chase.obj.  Using first PCH.
+x64\Release\error.obj : warning LNK4042: object specified more than once; extras ignored
+LINK : warning C4727: PCH named c:\users\segfault\documents\github\chaselibrary\x64\release\chaselibrary.pch with same timestamp found in c:\users\segfault\documents\github\chaselibrary\x64\release\human.obj and c:\users\segfault\documents\github\chaselibrary\x64\release\error.obj.  Using first PCH.
+LINK : warning C4727: PCH named c:\users\segfault\documents\github\chaselibrary\x64\release\chaselibrary.pch with same timestamp found in c:\users\segfault\documents\github\chaselibrary\x64\release\modifiers.obj and c:\users\segfault\documents\github\chaselibrary\x64\release\limb.obj.  Using first PCH.
+LINK : warning C4727: PCH named c:\users\segfault\documents\github\chaselibrary\x64\release\chaselibrary.pch with same timestamp found in c:\users\segfault\documents\github\chaselibrary\x64\release\object.obj and c:\users\segfault\documents\github\chaselibrary\x64\release\limb.obj.  Using first PCH.
+LINK : warning C4727: PCH named c:\users\segfault\documents\github\chaselibrary\x64\release\chaselibrary.pch with same timestamp found in c:\users\segfault\documents\github\chaselibrary\x64\release\pch.obj and c:\users\segfault\documents\github\chaselibrary\x64\release\limb.obj.  Using first PCH.
+LINK : warning C4727: PCH named c:\users\segfault\documents\github\chaselibrary\x64\release\chaselibrary.pch with same timestamp found in c:\users\segfault\documents\github\chaselibrary\x64\release\transform.obj and c:\users\segfault\documents\github\chaselibrary\x64\release\threadmanager.obj.  Using first PCH.
+     Creating library C:\Users\segfault\Documents\GitHub\CHASELibrary\x64\Release\CHASELibrary.lib and object C:\Users\segfault\Documents\GitHub\CHASELibrary\x64\Release\CHASELibrary.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 630 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  CHASELibrary.vcxproj -> C:\Users\segfault\Documents\GitHub\CHASELibrary\x64\Release\CHASELibrary.dll

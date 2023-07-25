@@ -16,6 +16,8 @@
 
 #include <transform/transform.h>
 
+#include <pch.h>
+
 double Transform::calculateTriangleArea(Transform::Point p0, Transform::Point p1, Transform::Point p2) {
     // Calculate the area of a triangle in 3D space
     double crossProductLength = std::sqrt(
