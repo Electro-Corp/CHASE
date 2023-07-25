@@ -18,6 +18,14 @@
 
 #include <string>
 
+/*
+* Each human has limbs that detemine
+* what it does. If both of its arms
+* are destroyed, chances are it will
+* run away instead of fighting.
+*/
+
+
 class Limb {
 private:
 	float damage; // float value from 0.0 to 1.0 (1.0 means completely useless/dismembered)

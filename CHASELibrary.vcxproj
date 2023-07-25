@@ -30,6 +30,7 @@
     <ClCompile Include="src\object.cpp" />
     <ClCompile Include="src\pch.cpp" />
     <ClCompile Include="src\threadmanager\threadmanager.cpp" />
+    <ClCompile Include="src\transform\transform.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Error.h" />

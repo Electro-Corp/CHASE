@@ -1,20 +1,52 @@
 ﻿E:\vs2022\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1116,5): warning MSB8027: Two or more files with the name of Error.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Error.cpp, src\error\error.cpp.
-enviorment.obj : error LNK2005: "bool __cdecl Transform::checkOverlap(class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >,class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >)" (?checkOverlap@Transform@@YA_NV?$vector@VPoint@Transform@@V?$allocator@VPoint@Transform@@@std@@@std@@0@Z) already defined in chase.obj
-enviorment.obj : error LNK2005: "bool __cdecl Transform::checkLineSegmentIntersection(class Transform::Point,class Transform::Point,class Transform::Point &,class Transform::Point &)" (?checkLineSegmentIntersection@Transform@@YA_NVPoint@1@0AEAV21@1@Z) already defined in chase.obj
-enviorment.obj : error LNK2005: "bool __cdecl Transform::checkInside(class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >,class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >)" (?checkInside@Transform@@YA_NV?$vector@VPoint@Transform@@V?$allocator@VPoint@Transform@@@std@@@std@@0@Z) already defined in chase.obj
-enviorment.obj : error LNK2005: "double __cdecl Transform::calculateTriangleArea(class Transform::Point,class Transform::Point,class Transform::Point)" (?calculateTriangleArea@Transform@@YANVPoint@1@00@Z) already defined in chase.obj
-x64\Release\error.obj : warning LNK4042: object specified more than once; extras ignored
-human.obj : error LNK2005: "bool __cdecl Transform::checkOverlap(class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >,class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >)" (?checkOverlap@Transform@@YA_NV?$vector@VPoint@Transform@@V?$allocator@VPoint@Transform@@@std@@@std@@0@Z) already defined in chase.obj
-human.obj : error LNK2005: "bool __cdecl Transform::checkLineSegmentIntersection(class Transform::Point,class Transform::Point,class Transform::Point &,class Transform::Point &)" (?checkLineSegmentIntersection@Transform@@YA_NVPoint@1@0AEAV21@1@Z) already defined in chase.obj
-human.obj : error LNK2005: "bool __cdecl Transform::checkInside(class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >,class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >)" (?checkInside@Transform@@YA_NV?$vector@VPoint@Transform@@V?$allocator@VPoint@Transform@@@std@@@std@@0@Z) already defined in chase.obj
-human.obj : error LNK2005: "double __cdecl Transform::calculateTriangleArea(class Transform::Point,class Transform::Point,class Transform::Point)" (?calculateTriangleArea@Transform@@YANVPoint@1@00@Z) already defined in chase.obj
-object.obj : error LNK2005: "bool __cdecl Transform::checkOverlap(class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >,class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >)" (?checkOverlap@Transform@@YA_NV?$vector@VPoint@Transform@@V?$allocator@VPoint@Transform@@@std@@@std@@0@Z) already defined in chase.obj
-object.obj : error LNK2005: "bool __cdecl Transform::checkLineSegmentIntersection(class Transform::Point,class Transform::Point,class Transform::Point &,class Transform::Point &)" (?checkLineSegmentIntersection@Transform@@YA_NVPoint@1@0AEAV21@1@Z) already defined in chase.obj
-object.obj : error LNK2005: "bool __cdecl Transform::checkInside(class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >,class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >)" (?checkInside@Transform@@YA_NV?$vector@VPoint@Transform@@V?$allocator@VPoint@Transform@@@std@@@std@@0@Z) already defined in chase.obj
-object.obj : error LNK2005: "double __cdecl Transform::calculateTriangleArea(class Transform::Point,class Transform::Point,class Transform::Point)" (?calculateTriangleArea@Transform@@YANVPoint@1@00@Z) already defined in chase.obj
-threadmanager.obj : error LNK2005: "bool __cdecl Transform::checkOverlap(class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >,class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >)" (?checkOverlap@Transform@@YA_NV?$vector@VPoint@Transform@@V?$allocator@VPoint@Transform@@@std@@@std@@0@Z) already defined in chase.obj
-threadmanager.obj : error LNK2005: "bool __cdecl Transform::checkLineSegmentIntersection(class Transform::Point,class Transform::Point,class Transform::Point &,class Transform::Point &)" (?checkLineSegmentIntersection@Transform@@YA_NVPoint@1@0AEAV21@1@Z) already defined in chase.obj
-threadmanager.obj : error LNK2005: "bool __cdecl Transform::checkInside(class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >,class std::vector<class Transform::Point,class std::allocator<class Transform::Point> >)" (?checkInside@Transform@@YA_NV?$vector@VPoint@Transform@@V?$allocator@VPoint@Transform@@@std@@@std@@0@Z) already defined in chase.obj
-threadmanager.obj : error LNK2005: "double __cdecl Transform::calculateTriangleArea(class Transform::Point,class Transform::Point,class Transform::Point)" (?calculateTriangleArea@Transform@@YANVPoint@1@00@Z) already defined in chase.obj
-     Creating library C:\Users\segfault\Documents\GitHub\CHASELibrary\x64\Release\CHASELibrary.lib and object C:\Users\segfault\Documents\GitHub\CHASELibrary\x64\Release\CHASELibrary.exp
-C:\Users\segfault\Documents\GitHub\CHASELibrary\x64\Release\CHASELibrary.dll : fatal error LNK1169: one or more multiply defined symbols found
+  Error.cpp
+  chase.cpp
+C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\chase.h(48,54): warning C4190: '_debugGetName' has C-linkage specified, but returns UDT 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' which is incompatible with C
+E:\vs2022\VC\Tools\MSVC\14.36.32532\include\xstring(5155,29): message : see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+C:\Users\segfault\Documents\GitHub\CHASELibrary\src\chase.cpp(36,13): warning C4273: 'Chase::init': inconsistent dll linkage
+C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\chase.h(41,14): message : see previous definition of 'init'
+C:\Users\segfault\Documents\GitHub\CHASELibrary\src\chase.cpp(54,24): warning C4273: 'Chase::addHuman': inconsistent dll linkage
+C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\chase.h(43,25): message : see previous definition of 'addHuman'
+C:\Users\segfault\Documents\GitHub\CHASELibrary\src\chase.cpp(64,20): warning C4273: 'Chase::_debugGetName': inconsistent dll linkage
+C:\Users\segfault\Documents\GitHub\CHASELibrary\src\include\chase.h(48,21): message : see previous definition of '_debugGetName'
+  dllmain.cpp
+  enviorment.cpp
+  error.cpp
+  human.cpp
+C:\Users\segfault\Documents\GitHub\CHASELibrary\src\human\human.cpp(67,8): warning C4101: 'survivabilityProbability': unreferenced local variable
+  limb.cpp
+  modifiers.cpp
+  object.cpp
+E:\vs2022\VC\Tools\MSVC\14.36.32532\include\tuple(144,47): warning C4244: 'initializing': conversion from '_Ty' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+          and
+          [
+              _Ty=float
+          ]
+E:\vs2022\VC\Tools\MSVC\14.36.32532\include\tuple(236,102): message : see reference to function template instantiation 'std::_Tuple_val<_This>::_Tuple_val<_Ty>(_Other &&)' being compiled
+          with
+          [
+              _This=float,
+              _Ty=int,
+              _Other=int
+          ]
+E:\vs2022\VC\Tools\MSVC\14.36.32532\include\tuple(282,16): message : see reference to function template instantiation 'std::tuple<float,float,float>::tuple<std::_Exact_args_t,_Ty,_Ty,_Ty,0>(_Tag,_This2 &&,_Ty &&,_Ty &&)' being compiled
+          with
+          [
+              _Ty=int,
+              _Tag=std::_Exact_args_t,
+              _This2=int
+          ]
+C:\Users\segfault\Documents\GitHub\CHASELibrary\src\object.cpp(8,28): message : see reference to function template instantiation 'std::tuple<float,float,float>::tuple<int,int,int,0>(_This2 &&,int &&,int &&) noexcept' being compiled
+          with
+          [
+              _This2=int
+          ]
+C:\Users\segfault\Documents\GitHub\CHASELibrary\src\object.cpp(8,28): message : see the first reference to 'std::tuple<float,float,float>::tuple' in 'Object::Object'
+  pch.cpp
+  threadmanager.cpp
+  transform.cpp
+C:\Users\segfault\Documents\GitHub\CHASELibrary\src\transform\transform.cpp(121,1): error C2857: '#include' statement specified with the /Ycpch.h command-line option was not found in the source file
