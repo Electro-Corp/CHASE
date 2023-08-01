@@ -41,6 +41,7 @@ Enviorment::Enviorment::Enviorment() {
 }
 
 void Enviorment::Enviorment::addSource(Source src) {
+	PLOG_DEBUG << "Adding Source...";
 	for (Source i : regions) {
 		if (Transform::checkOverlap(i.getVertices(), src.getVertices())) {
 			regions.push_back(src);

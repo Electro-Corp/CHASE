@@ -19,8 +19,24 @@
 #include <vector>
 #include <transform/transform.h>
 #include <../include/object.hpp>
+#include <string>
 
 namespace Enviorment {
+	/*
+	*	"abstract" class that other objTypes derive from.
+	*	Informs the humans what their surroundings are
+	*	and what to do about it
+	*/
+	class objectType {
+	private:
+		std::string name;
+	public:
+		objectType(std::string name);
+
+		// Getters and setters
+		std::string getName();
+	};
+
 	/*
 	* Contains a single sub-area of the Environment
 	*/

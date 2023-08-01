@@ -18,6 +18,9 @@
 #include <plog/Initializers/RollingFileInitializer.h>
 #include <plog/Formatters/TxtFormatter.h>
 #include <plog/Initializers/ConsoleInitializer.h>
+#include <plog/Formatters/TxtFormatter.h>
+#include <plog/Appenders/ConsoleAppender.h>
+#include <plog/Appenders/RollingFileAppender.h>
 
 #include <pch.h>
 #include <chase.h>
@@ -36,7 +39,9 @@
 void Chase::init() {
 
 
-	plog::init<plog::TxtFormatter>(plog::debug, plog::streamStdOut);
+	static plog::RollingFileAppender<plog::TxtFormatter> fileAppender("CHASElog.txt");
+	static plog::ConsoleAppender<plog::TxtFormatter> consoleAppender; 
+	plog::init(plog::debug, &fileAppender).addAppender(&consoleAppender);
 
 	PLOG_DEBUG << "Chase Init - Version " << MAJOR_VER_NUM << "." << MINOR_VER_NUM;
 
