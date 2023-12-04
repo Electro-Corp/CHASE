@@ -33,5 +33,7 @@ private:
 	std::string name;
 public:
 	Limb(std::string name);
+
+	float getDamage();
 };
 #endif

@@ -91,6 +91,7 @@ namespace Enviorment {
 
 		// Create sources
 		void addSource(Source src);
+		void addObject(Object obj);
 		
 		// Getters and setters
 

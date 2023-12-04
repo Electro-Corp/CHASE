@@ -19,3 +19,7 @@
 Limb::Limb(std::string name) {
 	this->name = name;
 }
+
+float Limb::getDamage(){
+	return this->damage;
+}

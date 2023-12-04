@@ -50,6 +50,12 @@ void Enviorment::Enviorment::addSource(Source src) {
 	}
 }
 
+void Enviorment::Enviorment::addObject(Object obj){
+	// Find Source in which this should be placed (based on position data)
+	// Or perhapds addObject should be for Sources?
+	// I'm not sure
+}
+
 // Getter / setters
 
 

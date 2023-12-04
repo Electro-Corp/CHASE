@@ -30,18 +30,24 @@ Human::Human::Human(std::string name, human_id id) : Object() { // extends from 
 
 	Limb* LArm = new Limb("LEFT_Arm");
 	limbs.push_back(LArm);
+	lArm = true;
 
 	Limb* RArm = new Limb("RIGHT_Arm");
 	limbs.push_back(RArm);
+	rArm = true;
 
 	Limb* Torso = new Limb("Torso");
 	limbs.push_back(Torso);
 
 	Limb* LLeg = new Limb("LEFT_Leg");
 	limbs.push_back(LLeg);
+	lLeg = true;
 
 	Limb* RLeg = new Limb("RIGHT_Leg");
 	limbs.push_back(RLeg);
+	rLeg = true;
+
+	functioningLimbs = limbs.size();
 
 	// Generate modifiers
 
@@ -88,6 +94,34 @@ void Human::Human::humanMainUpdate(/*ARGS NEEDED*/) {
 	*	> add more as time goes on
 	*/
 
+
+	// First check health of all limbs
+	// Could be done with an average i guess
+	// But it's probabbly better to check each 
+	// so we can determin what actions can be taken
+
+
+
+	// TODO: MAKE THE VALUES getDamage
+	// IS COMPARED WITH READ FROM A 
+	// CONFIG FILE
+
+	// in order:
+	// 1. head
+	if(limbs[0]->getDamage() > 50.0f){
+		// We're pretty damaged, just lie around
+		return; // once again this will return some value
+	}
+	// 2. l_arm
+	if(lArm){
+		if(limbs[0]->getDamage() > 90.0f){
+			functioningLimbs--;
+			lArm = false;
+		}else if(limbs[0]->getDamage() > 70.0f){
+			
+		}
+	}
+	// 3. h_arm
 
 
 

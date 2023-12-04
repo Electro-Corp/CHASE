@@ -42,6 +42,12 @@ namespace Human {
 		human_id id;
 		// Limbs
 		std::vector<Limb*> limbs;
+
+		// Limb stats
+		int functioningLimbs;
+
+		bool rArm, lArm, rLeg, lLeg;
+
 	public:
 		Human(std::string name, human_id id);
 		std::string get_name();
