@@ -303,3 +303,13 @@
 2023-12-04 13:16:14.211 INFO  [58064] [main@24] [TEST PROGRAM] Created human 4
 2023-12-04 13:16:14.211 INFO  [58064] [main@26] [TEST PROGRAM] LOC = 0 SUB_LOC = 5
 2023-12-04 13:16:14.211 INFO  [58064] [main@28] [TEST PROGRAM] Retrived human name: Dummy4
+2023-12-04 13:46:45.778 DEBUG [59315] [Chase::init@46] Chase Init - Version 0.0
+2023-12-04 13:46:45.779 DEBUG [59315] [ThreadManager::ThreadManager::ThreadManager@32] Electro ThreadManager Startup
+2023-12-04 13:46:45.779 DEBUG [59315] [ThreadManager::ThreadManager::ThreadManager@33] Creating Startup GroupThread
+2023-12-04 13:46:45.779 DEBUG [59315] [ThreadManager::GroupThread::GroupThread@92] Group Thread initilizing..
+2023-12-04 13:46:45.779 DEBUG [59315] [ThreadManager::GroupThread::GroupThread@95] Group Thread init finished.
+2023-12-04 13:46:45.780 DEBUG [59315] [ThreadManager::ThreadManager::ThreadManager@41] Electro ThreadManager Init finished.
+2023-12-04 13:46:45.780 DEBUG [59315] [Enviorment::Enviorment::Enviorment@33] Enviorment Intilizing..
+2023-12-04 13:46:45.780 DEBUG [59315] [Enviorment::Enviorment::Enviorment@36] Enviorment Intilizing finished - [OK]
+2023-12-04 13:46:45.780 DEBUG [59315] [ThreadManager::ThreadManager::createHuman@65] LOC = 0 SUB_LOC = 0
+2023-12-04 13:46:45.780 DEBUG [59315] [ThreadManager::GroupThread::addHuman@108] Adding human with name: Person1

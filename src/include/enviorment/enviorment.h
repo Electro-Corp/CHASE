@@ -37,6 +37,33 @@ namespace Enviorment {
 		std::string getName();
 	};
 
+
+	// Other objectTypes
+	// - Cover
+	// - Neutral
+	// - Bad
+	// - Good
+	// -
+	class ObjectType_Cover : objectType{
+		private:
+		public:
+	};
+
+	class ObjectType_Neutral : objectType{
+		private:
+		public:
+	};
+
+	class ObjectType_Bad : objectType{
+		private:
+		public:
+	};
+
+	class ObjectType_Good : objectType{
+		private:
+		public:
+	};
+
 	/*
 	* Contains a single sub-area of the Environment
 	*/

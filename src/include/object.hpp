@@ -19,11 +19,14 @@
 
 #include <string.h>      
 #include <transform/transform.h> 
+#include <enviorment/enviorment.h>
 
 class Object {
 private:
     vector3 position;
     vector3 size;
+
+    Enviorment::objectType objType;
 
 public:
     Object(vector3 _position, vector3 _size);
