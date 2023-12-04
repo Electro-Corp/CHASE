@@ -33,6 +33,8 @@ namespace Chase {
 	ThreadManager::ThreadManager* threadMan;
 	Enviorment::Enviorment* env;
 
+	// Windows
+	#ifdef WIN32
 	#ifdef __cplusplus
 	extern "C" {
 	#endif
@@ -51,6 +53,15 @@ namespace Chase {
 		// End exported functions
 	#ifdef __cplusplus
 	}
+	#endif
+	#else
+		void init();
+		Human::human_id addHuman(std::string name);
+		
+		// debug
+		#ifdef DEBUG
+		std::string _debugGetName(Human::human_id id);
+		#endif
 	#endif
 	 
 }

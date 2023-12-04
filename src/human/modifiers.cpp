@@ -23,5 +23,5 @@ Modifier::Modifier(
 	float intelligence,
 	float happiness
 ) {
-
+	
 }

@@ -9,6 +9,6 @@ cp src/chase.so examples
 
 cd examples
 
-g++ main.cpp chase.so -I ../src -I ../src/include -o test.dll
+g++ ex1.cpp chase.so -I ../src -I ../src/include -o test.dll
 
 LD_LIBRARY_PATH="." ./test.dll

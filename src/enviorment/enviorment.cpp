@@ -35,7 +35,7 @@ Enviorment::Enviorment::Enviorment() {
 	std::string status = STATUS_OK;
 	PLOG_DEBUG << "Enviorment Intilizing finished - [" << status << "]";
 
-	if (status != STATUS_OK || STATUS_ISSUES) {
+	if (status != STATUS_OK && status != STATUS_ISSUES) {
 		PLOG_ERROR << "Enviorment init failed.";
 	}
 }
@@ -59,8 +59,6 @@ template<typename... Args>
 Enviorment::Source::Source(Transform::Point value, Args... args) {
 	std::vector<Transform::Point> values{ value, args... };
 	vertices = values;
-
-	
 }
 
 std::vector<Transform::Point> Enviorment::Source::getVertices() {
